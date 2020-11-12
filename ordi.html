@@ -2,20 +2,81 @@
 <html>
 
 <head>
-  <title>Escape</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
-  <link rel="stylesheet" type="text/css" href="css/style-ordi.css">
+    <title>Escape</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="css/style-ordi.css">
 </head>
 
 <body>
+    <!-- fausse barre de menu -->
+    <div class="row" style="background-color: black;">
+        <div class="col-sm-11"></div>
+        <div class="col-sm-1">
+            <div class="row">
+                <div class="col-sm-11"></div>
+                <div class="col-sm-1">
+                    <div id="moncercle1"></div>
+                </div>
+                <div class="col-sm-1">
+                    <div id="moncercle2"></div>
+                </div>
+                <div class="col-sm-1">
+                    <div id="moncercle3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fichier à cliquer dessus -->
+    <div class="row">
+        <div class="col-lg-1 fichier" id="fichier1">
+            <div class="img"></div>
+            <p style="text-align: center;"> Fichier 1</p>
+        </div>
+        <div class="col-lg-1 fichier" id="fichier2">
+            <div class="img"></div>
+            <p style="text-align: center;"> Fichier 2</p>
+        </div>
+        <div class="col-lg-1 fichier" id="fichier3">
+            <div class="img"></div>
+            <p style="text-align: center;"> Fichier 3</p>
+        </div>
+    </div>
+
+    <!-- fenêtre qui apparait pour chaque fichier quand on clique dessus-->
+    <div id="texte1">
+        <div class="texte">
+            <div class="row" style="background-color: black; margin : 5% 0% 5%">
+                <div class="col-sm-11"></div>
+                <div class="col-sm-1">
+                    <div class="row">
+                        <div class="col-sm-11"></div>
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-1">
+                            <div id="moncercle3"></div>
+                            <!-- Bouton de retour-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="margin: 0 10px;">
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human
+                happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who
+                loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+            </p>
+        </div>
+    </div>
 
 
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
