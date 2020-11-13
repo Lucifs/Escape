@@ -1,10 +1,21 @@
 .butons-bas {
 	position: absolute;
 	bottom: 10px;
-
 }
 
+h1 {
+	color:white;
+}
 
 body {
-	padding: 20px 20px;
+	padding: 20px 55px;
+	background-color: black;
+	background-image: url('https://cdnfr1.img.sputniknews.com/img/104227/74/1042277410_122:9:2015:980_768x0_80_0_1_51d7844c1dc47ab8fd1cdb1961dd28bf.jpg.webp');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+body * {
+
+	display: block;
 }
