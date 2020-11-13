@@ -27,3 +27,10 @@ $('#terminal').click(() => {
 $('#close-t').click( function () {
         $('#terminal-command').hide();
     });
+
+hashCode = s => s.split('').reduce((a,b)=>{a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);
+
+$("#code").keyup(() =>{
+if (hashCode($('#code').val()) == 109202173){
+    $("#success").show()
+}})
