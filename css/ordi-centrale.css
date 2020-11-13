@@ -1,0 +1,136 @@
+#container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font: 400 62.5%/1 Arial,sans-serif;
+    line-height: 1.4em;
+    background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/124771234_3415930508527569_7901493639754687118_o.jpg?_nc_cat=104&ccb=2&_nc_sid=825194&_nc_ohc=-xytiO7XUBAAX861Ufe&_nc_ht=scontent-cdg2-1.xx&oh=6962e20d02d83d14f2c743aa88560eda&oe=5FD5D9A0');
+    background-repeat: no-repeat;
+    background-position: center 130px;
+    background-size: 600px;
+    background
+}
+
+#fm1 {
+    padding: 20px;
+    background: #F6F6F6;
+    border: none;
+}
+
+form {
+    display: block;
+    margin-top: 170px;
+    margin-bottom: 175px; 
+}
+
+#login {
+    width: 28em;
+    margin: 1.5em auto;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#fm1 .row label {
+    display: block;
+    color: #555555;
+}
+
+#fm1 h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+header h1 {
+    color: #333;
+    padding: .4em .4em;
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;
+}
+
+#fm1 .row.check {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 11px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+label {
+    cursor: default;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+a img {
+    display: block;
+    margin: 0 auto;
+}
+
+#barrenoire {
+    display: block;
+    background-color: black;
+    height: 20px;
+    color: white;
+    font-size: 1.6em;
+    padding-top: 4px;
+    padding-left: 2%;
+
+}
+
+
+
+
+
+
+
+
