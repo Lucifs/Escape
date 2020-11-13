@@ -1,0 +1,48 @@
+body {
+    background-color: grey;
+    color: white;
+}
+
+#moncercle1 {
+    background: #e0cb06;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e0cb06;
+}
+
+#moncercle2 {
+    background: #6fd70e;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #6fd70e;
+}
+
+#moncercle3 {
+    background: #d71b0e;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d71b0e;
+}
+
+.fichier {
+    margin: 10px 10px 10px;
+}
+
+.img {
+    background-color: white;
+    margin: 0 auto;
+    width: 110px;
+    height: 160px;
+}
+
+.texte {
+    background-color: darkslategrey;
+    margin: 0% 15% 5%;
+}
+
+#texte1 {
+    display: block;
+}
