@@ -1,2 +1,61 @@
-body {
+html {
+  height: 100%;
 }
+
+body {
+	overflow-x: hidden;
+	min-height: 100%;
+}
+
+
+.demoWrapper {
+  padding: 20px 100px;
+  background: white;
+  box-sizing: border-box;
+  resize: horizontal;
+  overflow: auto;
+  max-width: 100%;
+  height: calc(100vh - 16px);
+}
+
+.tableau-liege {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: #DEB887;
+  background-image: url('https://previews.123rf.com/images/ccat82/ccat821203/ccat82120300063/12704367-texture-fine-avec-du-li%C3%A8ge-pour-l-utilisation-d-arri%C3%A8re-plan.jpg');
+  border: solid;
+  border-width: 18px;
+  border-color: #8B4513;
+}
+
+
+.post-it {
+  display: block;
+  background-color: gold;
+  height: 50px;
+  width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
