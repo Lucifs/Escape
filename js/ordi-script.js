@@ -2,19 +2,29 @@
 //     $('#cache').show();
 //  });
 
+function closeAll() {
+    $('#terminal-command').hide();
+    $('#texte1').hide();
+    $('#texte2').hide();
+    $('#texte3').hide();
+}
+
 $('#fichier1').click(() => {
+	closeAll();
         $('#texte1').show();
     });
 $('#close1').click( function () {
         $('#texte1').hide();
     });
 $('#fichier2').click(() => {
+	closeAll();
         $('#texte2').show();
     });
 $('#close2').click( function () {
         $('#texte2').hide();
     });
 $('#fichier3').click(() => {
+	closeAll();
         $('#texte3').show();
     });
 $('#close3').click( function () {
@@ -22,6 +32,7 @@ $('#close3').click( function () {
     });
 
 $('#terminal').click(() => {
+	closeAll();
         $('#terminal-command').show();
     });
 $('#close-t').click( function () {
