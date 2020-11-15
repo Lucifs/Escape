@@ -2,55 +2,96 @@
 <html>
 
 <head>
-  <title>Escape</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Escape</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style-liege.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 
 <body>
 
+<!-- Modal post-it-1 -->
+<div class="modal fade" id="post-it-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 1 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        Ceci est le contenu du post-it 1
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal post-it-2 -->
+<div class="modal fade" id="post-it-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 2 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        Ceci est le contenu du post-it 2
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal post-it-3 -->
+<div class="modal fade" id="post-it-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 3 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        Ceci est le contenu du post-it 3
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-
-	<div class="demoWrapper" style="height: 80%;">
-		<div class="tableau-liege">
-    		<div class="post-it">
-    			<!-- Modal à implémenter... -->
-    			<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong">
- 					Post-it 1
+	<div class="demoWrapper">
+		<div class="tableau-liege row">
+    		<div class="post-it col-1"><!-- Post-it 1 -->
+    			<!-- Button trigger modal -->
+				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-1">
+				  Post-it 1
 				</button>
-    			
     		</div>
-    		<div class="post-it" style="margin-left: 50%;">
-    			Post-it 2
+    		<div class="col-6">
+    		</div>
+    		<div class="post-it col-3">
+				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-2">
+				  Post-it 2
+				</button>
     		</div>
   		</div>
 
-	</div>
-
-
-	<!-- Modal à implémenter... -->
-	<div class="modal" tabindex="-1" role="dialog">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <p>Modal body text goes here.</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
 	</div>
 
 
@@ -59,3 +100,4 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+</html>
