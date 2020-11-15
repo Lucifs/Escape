@@ -7,20 +7,20 @@ body {
 	min-height: 100%;
 }
 
-
 .demoWrapper {
   padding: 20px 100px;
-  background: white;
+  background: ghostwhite;
   box-sizing: border-box;
   resize: horizontal;
   overflow: auto;
   max-width: 100%;
   height: calc(100vh - 16px);
+  height: 80%;
 }
 
 .tableau-liege {
   width: 100%;
-  padding-bottom: 56.25%;
+  /*padding-bottom: 56.25%;*/
   background: #DEB887;
   background-image: url('https://previews.123rf.com/images/ccat82/ccat821203/ccat82120300063/12704367-texture-fine-avec-du-li%C3%A8ge-pour-l-utilisation-d-arri%C3%A8re-plan.jpg');
   border: solid;
@@ -30,33 +30,64 @@ body {
 
 
 .post-it {
-  display: block;
   background-color: gold;
   height: 50px;
   width: 10%;
   padding-left: 0px !important;
   padding-right: 0px !important;
+  margin: 5px !important;
 }
 
-.post-it button {
-  font-size: 0.5em;
+.pdf {
+  background-color: ghostwhite;
+  height: 250px;
+  width: 10%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin: 5px !important;
+}
+
+.image {
+  
+}
+
+
+.pdf button {
+  font-size: 0.8em;
   width: 100% !important;
   height: 100% !important;
 }
+
+.post-it button {
+  font-size: 0.6em;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
 
 .post-it-body {
   background-color: gold;
 }
 
+.post-it.col-1 {
+  height: 70px;
+}
+
+.post-it.col-2 {
+  height: 130px;
+}
 
 
 
 
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .demoWrapper {
     padding: 10px 0px;
+  }
+
+  .post-it button {
+  font-size: 0.5em;
   }
 }
 

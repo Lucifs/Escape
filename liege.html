@@ -11,7 +11,7 @@
 
 <body>
 
-<!-- Modal post-it-1 -->
+<!-- Modal post-it-1  Rappel contact mission-->
 <div class="modal fade" id="post-it-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -31,7 +31,7 @@
   </div>
 </div>
 
-<!-- Modal post-it-2 -->
+<!-- Modal post-it-2 Quart 1-->
 <div class="modal fade" id="post-it-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -45,14 +45,13 @@
         Ceci est le contenu du post-it 2
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal post-it-3 -->
+<!-- Modal post-it-3 Quart 2-->
 <div class="modal fade" id="post-it-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -66,31 +65,167 @@
         Ceci est le contenu du post-it 3
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal post-it-4 Troll 1-->
+<div class="modal fade" id="post-it-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 4 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        Ceci est le contenu du post-it 4
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal post-it-5 MdP-->
+<div class="modal fade" id="post-it-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 5 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        Ceci est le contenu du post-it 5
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
 
+<!-- Modal pdf-1 -->
+<div class="modal fade bd-example-modal-lg" id="pdf-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pdf-body">
+        Ceci est le contenu du PDF 1 !<br><br><br><br><br><br><br><br><br>
+        Agathe est contente de ce PDF<br><br><br><br><br><br><br><br><br>
+        Oui !<br><br><br><br><br><br><br><br><br>
+        Non...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal image-1 -->
+<div class="modal fade" id="image-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 5 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        Ceci est le contenu de l'image
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 	<div class="demoWrapper">
 		<div class="tableau-liege row">
+
+			<!-- Ligne 1 -->
+
+			<div class="col-2"></div>
+    		<div class="col-6"></div>
+    		<div class="post-it col-1">
+				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-2">
+				  Quart 1
+				</button>
+    		</div>
+
+    		<div class="w-100"></div>
+
+    		<!-- Ligne 2 -->
+
+    		<div class="col-1"></div>
     		<div class="post-it col-1"><!-- Post-it 1 -->
     			<!-- Button trigger modal -->
 				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-1">
-				  Post-it 1
+				  Rappeler contact mission
 				</button>
     		</div>
-    		<div class="col-6">
-    		</div>
-    		<div class="post-it col-3">
-				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-2">
-				  Post-it 2
+    		<div class="col-1"></div>
+    		<div class="pdf col-3">
+				<button type="button" class="btn" data-toggle="modal" data-target="#pdf-2">
+				  Tract
 				</button>
     		</div>
+    		<div class="col-3"></div>
+    		<div class="post-it col-1"><!-- Post-it 1 -->
+    			<!-- Button trigger modal -->
+				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-4">
+				  Troll 1
+				</button>
+    		</div>
+
+    		<div class="w-100"></div>
+
+    		<!-- Ligne 3 -->
+
+    		<div class="col-9"></div>
+    		<div class="post-it col-1">
+				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-5">
+				  MdP
+				</button>
+    		</div>   
+
+    		<div class="w-100"></div>
+
+    		<!-- Ligne 4 -->
+
+    		<div class="post-it col-1">
+				<button type="button" class="btn" data-toggle="modal" data-target="#post-it-3">
+				  Quart 2
+				</button>
+    		</div>
+    		<div class="col-1"></div>
+    		<div class="pdf col-3">
+    			<!-- TROUVER UN MOYEN DE TÉLÉCHARGER CE PUTAIN DE PDF  cf php tout ça-->
+				<button type="button" class="btn" data-toggle="modal" data-target="#pdf-1">
+				  Enigme emoji
+				</button>
+    		</div>  
+
   		</div>
+
+    	
+
 
 	</div>
 
