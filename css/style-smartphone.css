@@ -8,7 +8,7 @@ html, body {
    margin: 0;
 }
 
-.fullHeight{
+.fullHeight {
    height: 100%;  
    background: ghostwhite;
    color:white;
@@ -16,6 +16,17 @@ html, body {
    padding: 2px;
 }
 
-.iphone {
-   background-image: url('images/iphone.png')
+.fullHeight img {
+   z-index: 1;
+}
+
+.fullHeight div {
+   position: relative;
+   z-index: 2;
+   height: 100px;
+   width: 100px;
+   background-color: red;
+   opacity: 50%;
+   top:0px;
+   left: 
 }
