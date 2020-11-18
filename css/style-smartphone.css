@@ -8,7 +8,11 @@ html, body {
    margin: 0;
 }
 
-body div {
+area:focus {
+   outline: none;
+}
+
+.page {
    background-image: url(../images/background-smartphone.jpg);
    background-size: 100%;
    background-position: center;
