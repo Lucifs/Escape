@@ -46,19 +46,6 @@
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         	<button type="submit" name="login" value="login" class="btn btn-success">Confirm</button>
-        	<?php
-				if ($_SERVER["REQUEST_METHOD"] == "POST") {
-					$date = $_POST['login'];
-				  if ($date == '23/11/1998') {
-				    echo "<div class="alert alert-warning">
-				  				<strong>Erreur : mauvaise date !</strong>
-							</div>";
-				  } else {
-				    echo $date;
-				  }
-
-				}
-			?>
 	      </div>
 	    </div>
 	  </div>
