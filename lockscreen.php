@@ -50,10 +50,9 @@
 				if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					$date = $_POST['login'];
 				  if ($date == '23/11/1998') {
-				    echo "	<div class="alert alert-warning">
+				    echo "<div class="alert alert-warning">
 				  				<strong>Erreur : mauvaise date !</strong>
-							</div>
-						";
+							</div>";
 				  } else {
 				    echo $date;
 				  }
