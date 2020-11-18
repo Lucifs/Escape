@@ -12,6 +12,7 @@ body div {
    background-image: url(../images/background-smartphone.jpg);
    background-size: 100%;
    background-position: center;
+   background-repeat: no-repeat;
 }
 
 .fullHeight {
@@ -35,4 +36,12 @@ body div {
    opacity: 50%;
    top:0px;
    left: 
+}
+
+@media (max-width: 800px) {
+   body div {
+   background: ghostwhite !important;
+   background-image: none !important;
+}
+
 }
