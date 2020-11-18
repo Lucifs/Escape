@@ -51,7 +51,7 @@
 					$date = $_POST['login'];
 				  if ($date == '23/11/1998') {
 				    echo "	<div class="alert alert-warning">
-				  				<strong>Erreur : mauvaise date !</strong> Indicates a warning that might need attention.
+				  				<strong>Erreur : mauvaise date !</strong>
 							</div>
 						";
 				  } else {
