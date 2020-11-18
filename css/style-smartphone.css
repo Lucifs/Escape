@@ -8,9 +8,15 @@ html, body {
    margin: 0;
 }
 
+body div {
+   background-image: url(../images/background-smartphone.jpg);
+   background-size: 100%;
+   background-position: center;
+}
+
 .fullHeight {
    height: 100%;  
-   background: ghostwhite;
+   /*background: ghostwhite;*/
    color:white;
    font-size: 40px;
    padding: 2px;
