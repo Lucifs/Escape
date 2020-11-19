@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 
 
-<?php
-	
-
-
-
-?>
-
 <html>
 
 <head>
@@ -19,7 +12,7 @@
 </head>
 
 <body>
-	<div class="fullHeight text-center iphone">
+	<div class="fullHeight text-center page">
 		<img class="fullHeight" src="images/iphone.png" usemap="#map1605569696870">
 
 		<map id="map1605569696870" name="map1605569696870">
