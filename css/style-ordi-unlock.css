@@ -13,6 +13,15 @@ area:focus {
    outline: none;
 }
 
+.modal-content-dark {
+   color: white;
+   background: black;
+}
+
+.modal-content-dark div button {
+   color: white;
+}
+
 .page {
    background-image: url(../images/background-smartphone.jpg);
    background-size: 100%;
@@ -57,10 +66,18 @@ area:focus {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
    body div {
-   background: ghostwhite;
    background-image: none;
+}
+
+.fullHeight {
+   width: 100%;  
+   height: auto;
+   /*background: ghostwhite;*/
+   color:white;
+   font-size: 40px;
+   padding: 2px;
 }
 
 #barrenoire {
