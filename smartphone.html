@@ -33,6 +33,23 @@
   </div>
 </div>
 
+<!-- Modal post-it Quart 3-->
+<div class="modal fade" id="post-it" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <img src="http://18.192.30.155/images/post-it/quart3.png" alt="" style="width: 100%;">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal photos -->
 <div class="modal fade bd-example-modal-lg" id="photos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -45,7 +62,11 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="images/smartphone/photos.png" style="width: 100%;" >
+        <img src="http://18.192.30.155/images/smartphone/photos.png" alt="" usemap="#map1605825397573" style="width: 100%;">
+
+			<map id="map1605825397573" name="map1605825397573">
+				<area shape="rect" coords="568,112,844,326" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
+			</map>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -109,6 +130,11 @@
 	$(document).ready(function(e) {
     	$('img[usemap]').rwdImageMaps();
 	});
+
+	$("#photos").onClick(function(e) {
+    	$('img[usemap]').rwdImageMaps();
+	});
 </script>
+
 
 </body>
