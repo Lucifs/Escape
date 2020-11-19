@@ -1,0 +1,70 @@
+*{
+   box-sizing: border-box;
+}
+
+html, body {
+   background-color: black; 
+   height: 100%;
+   width: 100%;
+   margin: 0;
+}
+
+area:focus {
+   outline: none;
+}
+
+.page {
+   background-image: url(../images/background-smartphone.jpg);
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.fullHeight {
+   height: 100%;  
+   /*background: ghostwhite;*/
+   color:white;
+   font-size: 40px;
+   padding: 2px;
+}
+
+.fullHeight img {
+   z-index: 1;
+}
+
+.fullHeight div {
+   position: relative;
+   z-index: 2;
+   height: 100px;
+   width: 100px;
+   background-color: red;
+   opacity: 50%;
+   top:0px;
+   left: 
+}
+
+
+#barrenoire {
+   position:absolute;
+   z-index:2;
+   background-color: black;
+   height: 20px;
+   width: 225px;
+   color: white;
+   font-size: 1em;
+   padding-top: 0px;
+   padding-left: 2%;
+
+}
+
+@media (max-width: 800px) {
+   body div {
+   background: ghostwhite;
+   background-image: none;
+}
+
+#barrenoire {
+   visibility: hidden;
+}
+
+}
