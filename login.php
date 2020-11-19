@@ -44,7 +44,7 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email
             echo "Bonne combinaison.";
             $host = $_SERVER['HTTP_HOST'];
             $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-            $extra = 'ordi-unlock.html';
+            $extra = 'ordi-unlock.php';
             header("Location: http://$host$uri/$extra");
             exit();
     }else{
