@@ -23,28 +23,22 @@
 
 
 <div class="box" id="login">
-  <form id="fm1" action="/cas/login?service=https%3A%2F%2Fmoodle.centrale-marseille.fr%2Flogin%2Findex.php" method="post" autocomplete="off">
-
-    
-  
+  <form id="fm1" action="login.php" method="post" autocomplete="off">
     <h2>Entrez votre mail et votre mot de passe.</h2>
-  
+    
+    <input type="hidden" name="URL" value="ordi-centrale.html" readonly />
+
     <section class="row">
       <label for="email">Mail:</label>
-      
-        
-        
           
-          <input id="username" name="username" class="required" tabindex="1" accesskey="i" type="text" value="" size="25" autocomplete="off">
-        
-      
+          <input id="username" name="email" class="required" tabindex="1" accesskey="i" type="text" value="" size="25" autocomplete="off">
     </section>
     
     <section class="row">
       <label for="password"><span class="accesskey">M</span>ot de passe:</label>
       
       
-      <input id="password" name="password" class="required" tabindex="2" accesskey="m" type="password" value="" size="25" autocomplete="off">
+      <input id="password" name="MotDePasse" class="required" tabindex="2" accesskey="m" type="password" value="" size="25" autocomplete="off">
       <span id="capslock-on" style="display:none;"><p><img src="images/warning.png" valign="top"> La touche Verrouillage Majuscule est activée !</p></span>
     </section>
     
@@ -54,9 +48,6 @@
     </section>
     
     <section class="row btn-row">
-      <input type="hidden" name="lt" value="LT-39726-oG5zvGvdCCdwjTHLPKbRMPtKw0cfrv-jauth1">
-      <input type="hidden" name="execution" value="e1s1">
-      <input type="hidden" name="_eventId" value="submit">
 
       <input class="btn-submit" name="submit" accesskey="l" value="SE CONNECTER" tabindex="4" type="submit">
       <input class="btn-reset" name="reset" accesskey="c" value="EFFACER" tabindex="5" type="reset">
