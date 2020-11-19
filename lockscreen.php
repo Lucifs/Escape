@@ -23,8 +23,9 @@
 	        </button>
 	      </div>
 	      <div class="modal-body auth">
-	        <form method="post" action="" name="signin-form">
+	        <form method="post" action="login.php" name="signin-form">
 	          <div class="form-group">
+			  	<input type="hidden" name="URL" value="lockscreen.php" readonly />
 	            <label for="recipient-name" class="col-form-label">Entrez votre date de naissance :</label>
 	            <input 
                         type="text"
@@ -32,14 +33,13 @@
                         inputmode="numeric"
                         class="form-control"
                         id="field-birthday recipient-name"
-                        name="login"
+                        name="MotDePasse"
                         aria-invalid="false"
                         autocomplete="off"
                         placeholder="18/10/2000"
                         maxlength="10"
                         required>
 	          </div>
-	       </form>
 	       
 	      </div>
 	      
@@ -47,6 +47,7 @@
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         	<button type="submit" name="login" value="login" class="btn btn-success">Confirm</button>
 	      </div>
+		  </form>
 	    </div>
 	  </div>
 	</div>
