@@ -12,6 +12,15 @@ area:focus {
    outline: none;
 }
 
+.modal-content-dark {
+   color: white;
+   background: black;
+}
+
+.image-modal image {
+   max-width: 100%;
+}
+
 .page {
    background-image: url(../images/background-smartphone.jpg);
    background-size: 100%;
@@ -58,7 +67,6 @@ area:focus {
 
 @media (max-width: 800px) {
    body div {
-   background: ghostwhite;
    background-image: none;
 }
 
