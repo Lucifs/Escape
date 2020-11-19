@@ -9,7 +9,7 @@ body {
 
 .demoWrapper {
   padding: 20px 100px;
-  background: ghostwhite;
+  background: #D7CCC8;
   box-sizing: border-box;
   resize: horizontal;
   overflow: auto;
@@ -22,10 +22,10 @@ body {
   width: 100%;
   /*padding-bottom: 56.25%;*/
   background: #DEB887;
-  background-image: url('https://previews.123rf.com/images/ccat82/ccat821203/ccat82120300063/12704367-texture-fine-avec-du-li%C3%A8ge-pour-l-utilisation-d-arri%C3%A8re-plan.jpg');
+  background-image: url(https://previews.123rf.com/images/ccat82/ccat821203/ccat82120300063/12704367-texture-fine-avec-du-li%C3%A8ge-pour-l-utilisation-d-arri%C3%A8re-plan.jpg);
   border: solid;
   border-width: 18px;
-  border-color: #8B4513;
+  border-color: #5D4037;
 }
 
 
