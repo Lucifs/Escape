@@ -25,6 +25,10 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"])){
             exit();
         }else{
             echo "Mauvais mot de passe";
+            $host = $_SERVER['HTTP_HOST'];
+            $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+            header("Location: http://$host$uri/$url");
+            exit();
         }
     }
 }
