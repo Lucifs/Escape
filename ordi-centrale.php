@@ -26,7 +26,7 @@
   <form id="fm1" action="login.php" method="post" autocomplete="off">
 
     <?php 
-    // if ($_GET["error"]=="true"){
+    if ($_GET["error"]=="true"){
     //   echo "<div id="msg" class="errors" style="
     //                             background-color: rgb(255, 238, 221);
     //                             border: 1px dotted #BB0000;
@@ -34,8 +34,8 @@
     //                             padding-left: 100px;">
     //           Mauvais identifiant / mot de passe.
     //         </div>";
-    // }
-    echo "<div>Hello</div>";
+      echo "<div>Error</div>"
+    }
 
 
     ?>
