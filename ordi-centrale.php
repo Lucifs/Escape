@@ -35,7 +35,7 @@
       //                             padding-left: 100px;">
       //           Mauvais identifiant / mot de passe.
       //         </div>";
-    echo "<div>Error</div>"
+    echo "<div>Error</div>";
     //   }
     // }
     }
