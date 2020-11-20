@@ -142,7 +142,7 @@
       <div class="modal-body">
           <ul class="list-group">
             <li class="list-group-item" style="background-color: black;">Dapibus ac facilisis in</li>
-            <li class="list-group-item" style="background-color: black;"><a href="file.pdf" download="yes.pdf">Cliquer ici</a></li>
+            <li class="list-group-item" style="background-color: black;"><a href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">Cliquer ici</a></li>
             <li class="list-group-item" style="background-color: black;">Porta ac consectetur ac</li>
           </ul>
         </div>
