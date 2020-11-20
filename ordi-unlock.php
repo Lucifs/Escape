@@ -58,7 +58,9 @@
 	      </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Access</button>
+        <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
+        <button type="button" class="btn btn-danger" onclick="window.location.href='final.php';">Access</button>
+        
       </div>
     </div>
   </div>
