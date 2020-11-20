@@ -18,6 +18,11 @@ area:focus {
    background: black;
 }
 
+.list-content-dark {
+   color: white;
+   background-color: black !important;
+}
+
 .modal-content-dark div button {
    color: white;
 }

@@ -128,7 +128,31 @@
   </div>
 </div>
 
+<!-- Modal traquenard -->
+<div class="modal fade" id="traquenard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Locker</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
+      <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item" style="background-color: black;">Dapibus ac facilisis in</li>
+            <li class="list-group-item" style="background-color: black;"><a href="file.pdf">Cliquer ici</a></li>
+            <li class="list-group-item" style="background-color: black;">Porta ac consectetur ac</li>
+          </ul>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<div class="fullHeight text-center">
 		<img class="fullHeight" src="images/ordi-wallpaper.png" usemap="#map1605806144163" draggable="false">
