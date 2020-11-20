@@ -24,10 +24,10 @@
 	<p>Description :</p>
 	Choisissez votre rôle en concertation avec les membres de l'équipe
 	<ul>
-		<li><a href="">page1</a></li>
-		<li><a href="">page2</a></li>
-		<li><a href="">page3</a></li>
-		<li><a href="">page4</a></li>
+		<li><a href="ordi-centrale.php">Rôle 1</a></li>
+		<li><a href="lockscreen.php">Rôle 2</a></li>
+		<li><a href="liege.html">Rôle 3</a></li>
+		<li><a href="armoire.php">Rôle 4</a></li>
 	</ul>
 
 
