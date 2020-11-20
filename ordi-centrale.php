@@ -33,7 +33,7 @@
                                 color: #BB0000;
                                 padding-left: 100px;">
               Mauvais identifiant / mot de passe.
-            </div>"
+            </div>";
     };
 
 
