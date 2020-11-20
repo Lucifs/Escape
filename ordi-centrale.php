@@ -32,7 +32,7 @@
                                   background-color: rgb(255, 238, 221);
                                   border: 1px dotted #BB0000;
                                   color: #BB0000;
-                                  padding-left: 100px;\">
+                                  padding: 5px;\">
                 Mauvais identifiant / mot de passe.
               </div>";
     }
