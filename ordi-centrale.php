@@ -26,8 +26,7 @@
   <form id="fm1" action="login.php" method="post" autocomplete="off">
 
     <?php 
-    if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email"])){
-    // if isset($_GET["error"]){
+    if (isset($_GET["error"])) {
     //   if ($_GET["error"]=="true"){
       //   echo "<div id="msg" class="errors" style="
       //                             background-color: rgb(255, 238, 221);
