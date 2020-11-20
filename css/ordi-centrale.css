@@ -52,6 +52,10 @@ form {
     color: #555555;
 }
 
+#fm1 .row.check label {
+    display: inline;
+}
+
 #fm1 h2 {
     font-size: 1.5em;
     font-weight: normal;
