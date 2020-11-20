@@ -24,6 +24,20 @@
       </div>
 
       <div class="modal-body auth">
+        <?php 
+    if (isset($_GET["error"])) {
+    
+        echo "<div id=\"msg\" class=\"errors\" style=\"
+                                  background-color: rgb(255, 238, 221);
+                                  border: 1px dotted #BB0000;
+                                  color: #BB0000;
+                                  padding: 5px;\">
+                Mauvais identifiant / mot de passe.
+              </div>";
+    }
+
+
+    ?>
 	        <form>
 	          <div class="form-group">
 	            <label for="recipient-name" class="col-form-label">Exit with :</label>
