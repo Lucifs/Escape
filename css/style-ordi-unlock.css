@@ -18,14 +18,16 @@ area:focus {
    background: black;
 }
 
+.modal-content-dark div button {
+   color: white;
+}
+
+
 .list-content-dark {
    color: white;
    background-color: black !important;
 }
 
-.modal-content-dark div button {
-   color: white;
-}
 
 .page {
    background-image: url(../images/background-smartphone.jpg);
@@ -42,20 +44,6 @@ area:focus {
    padding: 2px;
 }
 
-.fullHeight img {
-   z-index: 1;
-}
-
-.fullHeight div {
-   position: relative;
-   z-index: 2;
-   height: 100px;
-   width: 100px;
-   background-color: red;
-   opacity: 50%;
-   top:0px;
-   left: 
-}
 
 
 #barrenoire {

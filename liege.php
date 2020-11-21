@@ -159,9 +159,18 @@
 
 
   <div class="fullHeight text-center page">
-    <img class="fullHeight" src="images/liege.png" usemap="#map1605569696870">
+    <img class="fullHeight" src="images/liege.png" usemap="#map1605971730284">
 
-    
+      <map id="map1605971730284" name="map1605971730284">
+        <area shape="rect" coords="122,124,260,222" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-1">
+        <area shape="rect" coords="733,94,863,224" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-2">
+        <area shape="rect" coords="354,338,463,442" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-3">
+        <area shape="rect" coords="522,516,674,610" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-4">
+        <area shape="rect" coords="369,89,502,215" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#image-1">
+        <area shape="rect" coords="816,517,967,664" title="" alt="" href="image2" target="_self">
+        <area shape="rect" coords="117,379,308,644" title="" alt="" href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
+        <area shape="rect" coords="618,263,895,476" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#pdf-1">
+      </map>
   </div>
 
 

@@ -5,8 +5,8 @@
   <title>Escape</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style-ordi-unlock.css">  <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-ordi-unlock.css">
 </head>
 
 <body>
@@ -28,10 +28,7 @@
     if (isset($_GET["error"])) {
     
         echo "<div id=\"msg\" class=\"errors\" style=\"
-                                  background-color: rgb(255, 238, 221);
-                                  border: 1px dotted #BB0000;
-                                  color: #BB0000;
-                                  padding: 5px;\">
+                                  color: #dc3545;\">
                 Mauvais identifiant / mot de passe.
               </div>";
     }
@@ -151,6 +148,75 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Unlock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal decrypt -->
+<div class="modal fade bd-example-modal-lg" id="decrypt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body pdf-body">
+        <iframe src="file.pdf" style="width:100%; height: 100%;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal invitation -->
+<div class="modal fade bd-example-modal-lg" id="invitation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body pdf-body">
+        <iframe src="file.pdf" style="width:100%; height: 100%;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal neurchi -->
+<div class="modal fade bd-example-modal-lg" id="neurchi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body pdf-body">
+        <iframe src="file.pdf" style="width:100%; height: 100%;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal echo -->
+<div class="modal fade bd-example-modal-lg" id="echo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body pdf-body">
+        <iframe src="https://classrooms.centrale-marseille.fr/html5client/join" style="width:100%; height: 100%;"></iframe>
       </div>
     </div>
   </div>
