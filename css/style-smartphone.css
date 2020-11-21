@@ -22,7 +22,7 @@ area:focus {
 }
 
 .page {
-   background: url(../images/background-smartphone.jpg) no-repeat center center fixed;
+   background: url(../images/background-smartphone.jpg);
    background-size: 100%;
    background-position: center;
    background-repeat: no-repeat;
