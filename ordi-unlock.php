@@ -132,7 +132,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Locker</h5>
+        <h5 class="modal-title" id="exampleModalLabel">traquenard</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -164,7 +164,7 @@
         </button>
       </div> -->
       <div class="modal-body pdf-body">
-        <iframe src="file.pdf" style="width:100%; height: 100%;"></iframe>
+        <iframe src="uploads/decrypt_unicode.pdf" style="width:100%; height: 100%;"></iframe>
       </div>
     </div>
   </div>
@@ -181,7 +181,7 @@
         </button>
       </div> -->
       <div class="modal-body pdf-body">
-        <iframe src="file.pdf" style="width:100%; height: 100%;"></iframe>
+        <iframe src="uploads/invitation_casino.pdf" style="width:100%; height: 100%;"></iframe>
       </div>
     </div>
   </div>
@@ -198,7 +198,7 @@
         </button>
       </div> -->
       <div class="modal-body pdf-body">
-        <iframe src="file.pdf" style="width:100%; height: 100%;"></iframe>
+        <iframe src="uploads/neurchi.png" style="width:100%; height: 100%;"></iframe>
       </div>
     </div>
   </div>
