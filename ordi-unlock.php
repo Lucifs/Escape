@@ -127,32 +127,6 @@
   </div>
 </div>
 
-<!-- Modal traquenard -->
-<div class="modal fade" id="traquenard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content modal-content-dark">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">traquenard</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-          <ul class="list-group">
-            <li class="list-group-item" style="background-color: black;">Dapibus ac facilisis in</li>
-            <li class="list-group-item" style="background-color: black;"><a href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">Cliquer ici</a></li>
-            <li class="list-group-item" style="background-color: black;">Porta ac consectetur ac</li>
-          </ul>
-        </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Unlock</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Modal decrypt -->
 <div class="modal fade bd-example-modal-lg" id="decrypt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
@@ -181,7 +155,10 @@
         </button>
       </div> -->
       <div class="modal-body pdf-body">
-        <iframe src="uploads/invitation_casino.pdf" style="width:100%; height: 100%;"></iframe>
+        <!-- <iframe src="uploads/invitation_casino.pdf" style="width:100%; height: 100%;"></iframe> -->
+        <object data="uploads/invitation_casino.pdf" type="application/pdf" style="width:100%; height: 100%;">
+          <embed src="uploads/invitation_casino.pdf" type="application/pdf" style="width:100%; height: 100%;" />
+        </object>
       </div>
     </div>
   </div>
@@ -227,7 +204,7 @@
 
 		<map id="map1605806144163" name="map1605806144163">
 			<area shape="rect" coords="17,0,37,22" title="" alt="" href="https://apple.com/fr/" target="_self">
-			<area shape="rect" coords="1054,35,1120,101" title="" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#traquenard">
+			<area shape="rect" coords="1054,35,1120,101" title="" alt="" href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
 			<area shape="rect" coords="1183,29,1241,101" title="" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#exit">
 			<area shape="rect" coords="1060,140,1112,214" title="" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#decrypt">
 			<area shape="rect" coords="1186,141,1238,213" title="" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#invitation">
