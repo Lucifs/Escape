@@ -24,7 +24,7 @@
         </button>
       </div>
       <div class="modal-body post-it-body">
-        Ceci est le contenu du post-it 1
+        <img src="images/post-it/rappel.png" style="width: 100%;">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
@@ -33,7 +33,7 @@
   </div>
 </div>
 
-<!-- Modal post-it-2 Quart 1-->
+<!-- Modal post-it-2 Quart 2-->
 <div class="modal fade" id="post-it-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -44,7 +44,7 @@
         </button>
       </div>
       <div class="modal-body post-it-body">
-        Ceci est le contenu du post-it 2
+        <img src="images/post-it/quart2.png" style="width: 100%;">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
@@ -53,7 +53,7 @@
   </div>
 </div>
 
-<!-- Modal post-it-3 Quart 2-->
+<!-- Modal post-it-3 Quart 4 -->
 <div class="modal fade" id="post-it-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -64,7 +64,7 @@
         </button>
       </div>
       <div class="modal-body post-it-body">
-        Ceci est le contenu du post-it 3
+        <img src="images/post-it/quart4.png" style="width: 100%;">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
@@ -73,8 +73,28 @@
   </div>
 </div>
 
-<!-- Modal post-it-4 Troll 1-->
+<!-- Modal post-it-4 MdP-->
 <div class="modal fade" id="post-it-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Post-it 4 !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        <img src="images/post-it/mdp.png" style="width: 100%;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal image-1 Troll 1-->
+<div class="modal fade" id="image-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -93,42 +113,20 @@
   </div>
 </div>
 
-<!-- Modal post-it-5 MdP-->
-<div class="modal fade" id="post-it-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Post-it 5 !</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body post-it-body">
-        Ceci est le contenu du post-it 5
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <!-- Modal pdf-1 -->
 <div class="modal fade bd-example-modal-lg" id="pdf-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
+  <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-content" style="height: 100%;">
+      <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body pdf-body">
-        Ceci est le contenu du PDF 1 !<br><br><br><br><br><br><br><br><br>
-        Agathe est contente de ce PDF<br><br><br><br><br><br><br><br><br>
-        Oui !<br><br><br><br><br><br><br><br><br>
-        Non...
+      </div> -->
+      <div class="modal-body pdf-body" style="height: 100%;">
+        <object data="uploads/emoji.pdf" type="application/pdf" style="width:100%; height: 100%;">
+          <embed src="uploads/emoji.pdf" type="application/pdf" style="width:100%; height: 100%;" />
+        </object>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
