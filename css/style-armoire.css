@@ -14,7 +14,7 @@ area:focus {
 
 .modal-content-dark {
    color: white;
-   background: black;
+   background: grey;
 }
 
 .image-modal image {
@@ -23,7 +23,7 @@ area:focus {
 
 .fullHeight {
    height: 100%;  
-   background: ghostwhite;
+   background: grey;
    color:white;
    font-size: 40px;
    padding: 2px;
