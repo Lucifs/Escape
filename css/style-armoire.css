@@ -1,0 +1,37 @@
+*{
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+}
+
+area:focus {
+   outline: none;
+}
+
+.modal-content-dark {
+   color: white;
+   background: black;
+}
+
+.image-modal image {
+   max-width: 100%;
+}
+
+.fullHeight {
+   height: 100%;  
+   background: ghostwhite;
+   color:white;
+   font-size: 40px;
+   padding: 2px;
+}
+
+
+
+@media (max-width: 1000px) {
+   
+
+}
