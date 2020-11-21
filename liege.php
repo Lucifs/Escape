@@ -107,7 +107,7 @@
         <img src="https://i.pinimg.com/236x/4b/4c/8c/4b4c8cada8245b0037480270c02d41c2--primates-funny-shit.jpg" style="width: 100%;">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
