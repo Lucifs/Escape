@@ -98,13 +98,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Post-it 4 !</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Mon image fétiche.</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body post-it-body">
-        Ceci est le contenu du post-it 4
+        <img src="https://i.pinimg.com/236x/4b/4c/8c/4b4c8cada8245b0037480270c02d41c2--primates-funny-shit.jpg" style="width: 100%;">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
@@ -155,6 +155,26 @@
   </div>
 </div>
 
+<!-- Modal image-2 -->
+<div class="modal fade" id="image-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nope.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body post-it-body">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen style="width: 100%;"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="fullHeight text-center page">
     <img class="fullHeight" src="images/liege.png" usemap="#map1605971730284">
@@ -165,7 +185,7 @@
         <area shape="rect" coords="354,338,463,442" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-3">
         <area shape="rect" coords="522,516,674,610" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-4">
         <area shape="rect" coords="369,89,502,215" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#image-1">
-        <area shape="rect" coords="816,517,967,664" title="" alt="" href="image2" target="_self">
+        <area shape="rect" coords="816,517,967,664" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#image-2">
         <area shape="rect" coords="117,379,308,644" title="" alt="" href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
         <area shape="rect" coords="618,263,895,476" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#pdf-1">
       </map>
