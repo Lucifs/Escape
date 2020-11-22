@@ -15,7 +15,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Locker</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Locker A</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -52,13 +52,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Locker</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Locker B</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Ceci est le corps du locker 2
+        Ceci est le corps du locker B
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
@@ -71,13 +71,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Locker</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Locker C</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Ceci est le corps du locker 3
+        Ceci est le corps du locker C
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>

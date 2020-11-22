@@ -43,7 +43,7 @@
 <!-- Modal post-it Quart 3-->
 <div class="modal fade" id="post-it" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content modal-content-dark">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Post-it !</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -69,7 +69,7 @@
         </button>
       </div> -->
       <div class="modal-body text-center" style="height: 97%;">
-        <img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;" >
+        <a href="#scrapModal" target="_self"data-toggle="modal" data-target="#post-it" data-dismiss="modal"><img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;" ></a>
       </div>
       <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
@@ -135,8 +135,8 @@
 </div>
 
 <!-- Modal phone -->
-<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"style="width: auto;">
-  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="height: 90%;">
     <div class="modal-content modal-content-dark" style="height: 100%;">
       <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
@@ -201,7 +201,7 @@
 			<area shape="rect" coords="525,154,628,255" title="notes" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#notes">
 			<area shape="rect" coords="86,313,189,416" title="maps" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#maps">
 			<area shape="rect" coords="232,315,334,416" title="clock" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#clock">
-			<area shape="rect" coords="377,313,484,417" title="files" alt="" href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
+			<area shape="rect" coords="377,313,484,417" title="files" alt="" href="uploads/sample_file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
        <!-- <a class="btn" href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf" style="width: 100%;height: 100%;"></a> -->
 			<area shape="rect" coords="72,61,104,89" title="easter1" alt="easter1" href="#scrapModal" target="_self"data-toggle="modal" data-target="#easter1">
 			<area shape="rect" coords="87,1255,191,1356" title="phone" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#phone">

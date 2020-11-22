@@ -186,7 +186,7 @@
         <area shape="rect" coords="522,516,674,610" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it-4">
         <area shape="rect" coords="369,89,502,215" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#image-1">
         <area shape="rect" coords="816,517,967,664" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#image-2">
-        <area shape="rect" coords="117,379,308,644" title="" alt="" href="file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
+        <area shape="rect" coords="117,379,308,644" title="" alt="" href="uploads/sample_file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
         <area shape="rect" coords="618,263,895,476" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#pdf-1">
       </map>
   </div>
