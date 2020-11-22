@@ -11,6 +11,7 @@
 
 <body>
 
+<!-- Modal Casier A -->
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
@@ -24,7 +25,7 @@
         <div class="modal-body auth">
           <form>
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Ce casier est protégé par un mot de passe à quatre chiffres</label>
+              <label for="recipient-name" class="col-form-label">Ce casier est protégé par un code à quatre chiffres</label>
               <input 
                         type="text"
                         pattern="[0-9][0-9][0-9][0-9]"
