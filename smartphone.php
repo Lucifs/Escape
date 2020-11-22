@@ -24,7 +24,7 @@
         </button>
       </div> -->
       <div class="modal-body text-center" style="height: 97%;">
-        <img src="images/smartphone/calendar.png" style="height:100%; max-width: 100%;" >
+        <img src="images/smartphone/calendar.jpg" style="height:100%; max-width: 100%;" >
       </div>
       <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
