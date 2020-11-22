@@ -26,7 +26,7 @@
       <div class="modal-body text-center" style="height: 97%;">
         <img src="images/smartphone/calendar.png" style="height:100%; max-width: 100%;" >
       </div>
-      <div class="modal-footer text-center" style="height: 5%;">
+      <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
         <button data-dismiss="modal" style="
             border-radius: 2px;
@@ -59,45 +59,56 @@
 </div>
 
 <!-- Modal photos -->
-<div class="modal fade bd-example-modal-lg" id="photos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content modal-content-dark">
-      <div class="modal-header">
-        <!-- <h5 class="modal-title" id="exampleModalLabel">Calendrier</h5> -->
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="photos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+        <img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;" >
       </div>
-      <div class="modal-body">
-        <img src="http://18.192.30.155/images/smartphone/photos.png" alt="" usemap="#map1605825397573" style="width: 100%;">
-
-			<map id="map1605825397573" name="map1605825397573">
-				<area shape="rect" coords="568,112,844,326" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
-			</map>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button data-dismiss="modal" style="
+            border-radius: 2px;
+            background: white;
+            width: 200px;
+            height: 5px;
+            border-style: none;
+            outline: none;">
+            </button>
       </div>
     </div>
   </div>
 </div>
 
-
 <!-- Modal notes -->
-<div class="modal fade bd-example-modal-lg" id="notes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content modal-content-dark">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Notes</h5>
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="notes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+        <img src="images/smartphone/notes.jpg" style="height:100%; max-width: 100%;" >
       </div>
-      <div class="modal-body">
-        <img src="images/smartphone/notes.png" style="width: 100%;" >
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button data-dismiss="modal" style="
+            border-radius: 2px;
+            background: white;
+            width: 200px;
+            height: 5px;
+            border-style: none;
+            outline: none;">
+            </button>
       </div>
     </div>
   </div>
@@ -118,6 +129,62 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal phone -->
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"style="width: auto;">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+        <img src="images/smartphone/phone.jpg" style="height:100%; max-width: 100%;" >
+      </div>
+      <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button data-dismiss="modal" style="
+            border-radius: 2px;
+            background: white;
+            width: 200px;
+            height: 5px;
+            border-style: none;
+            outline: none;">
+            </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal meteo -->
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="meteo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+        <img src="images/smartphone/meteo.jpg" style="height:100%; max-width: 100%;" >
+      </div>
+      <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button data-dismiss="modal" style="
+            border-radius: 2px;
+            background: white;
+            width: 200px;
+            height: 5px;
+            border-style: none;
+            outline: none;">
+            </button>
       </div>
     </div>
   </div>
