@@ -15,19 +15,26 @@
 
 <!-- Modal calendar -->
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="calendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content modal-content-dark">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Calendrier</h5>
+  <div class="modal-dialog" role="document" style="height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+        <img src="images/smartphone/calendar.png" style="height:100%; max-width: 100%;" >
       </div>
-      <div class="modal-body">
-        <img src="images/smartphone/calendar.png" style="width: 100%;" >
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="modal-footer text-center" style="height: 5%;">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button data-dismiss="modal" style="
+            border-radius: 2px;
+            background: white;
+            width: 200px;
+            height: 5px;
+            border-style: none;">
+            </button>
       </div>
     </div>
   </div>
@@ -81,13 +88,33 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Calendrier</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Notes</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <img src="images/smartphone/notes.png" style="width: 100%;" >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal maps -->
+<div class="modal fade bd-example-modal-lg" id="maps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-header modal-content-dark">
+        <h5 class="modal-title" id="exampleModalLabel">Maps (ou la carte qui a leaké un peu tôt...)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-content modal-content-dark">
+      <div class="modal-body text-center" style="max-width: 100%;">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1ORqv0Jc6_xaY3lekDkhITmILb1iGyF56" width="640" height="480"  style="max-width: 100%;"></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

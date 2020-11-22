@@ -21,10 +21,28 @@
         </button>
       </div>
       <div class="modal-body">
-        Ceci est le corps du locker 1
+        <div class="modal-body auth">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Ce casier est protégé par un mot de passe à quatre chiffres</label>
+              <input 
+                        type="text"
+                        pattern="[0-9][0-9][0-9][0-9]"
+                        inputmode="numeric"
+                        class="form-control"
+                        id="recipient-name"
+                        name="organisation-name"
+                        aria-invalid="false"
+                        autocomplete="off"
+                        placeholder="0000"
+                        maxlength="10"
+                        required>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Unlock</button>
       </div>
     </div>
   </div>
