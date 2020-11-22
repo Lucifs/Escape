@@ -25,8 +25,7 @@
         Ce message t'est addressé car tu en as fini avec l'ordinateur de Julie. Tu te retrouves donc dans cette ultime salle.
       </div>
       <div class="modal-body">
-        <div class="card-body">
-            <h5 class="card-title">Envoie ce lien à tes collègues pour qu'ils te rejoignent :</h5>
+            <p class="card-title">Envoie ce lien à tes collègues pour qu'ils te rejoignent :</p>
             <div class="input-group mb-3">
 	            <?php
 	            echo "<input type=\"text\" id=\"clipboardExample1\" class=\"form-control\" value=\"http://".$_SERVER['HTTP_HOST']."/final.php?hidemessage\">"
@@ -36,9 +35,8 @@
 	            		Copy
 	            	</button>
 	            </div>
-        	</div>
         </div>
-      	</div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
       </div>
@@ -103,6 +101,14 @@
 <script type="text/javascript" src="js/jquery.rwdImageMaps.js"></script>
 <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+    	$('img[usemap]').rwdImageMaps();
+    	new ClipboardJS('.btn');
+	});
+
+</script>
 <?php 
 if (!isset($_GET["hidemessage"])) {
     echo "<script>
@@ -112,12 +118,4 @@ if (!isset($_GET["hidemessage"])) {
 	</script>";
 }
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(e) {
-    	$('img[usemap]').rwdImageMaps();
-    	new ClipboardJS('.btn');
-	});
-
-</script>
 </body>
