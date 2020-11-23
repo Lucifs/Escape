@@ -24,6 +24,22 @@
 
 <div class="box" id="login">
   <form id="fm1" action="login.php" method="post" autocomplete="off">
+
+    <?php 
+    if (isset($_GET["error"])) {
+    
+        echo "<div id=\"msg\" class=\"errors\" style=\"
+                                  background-color: rgb(255, 238, 221);
+                                  border: 1px dotted #BB0000;
+                                  color: #BB0000;
+                                  padding: 5px;\">
+                Mauvais identifiant / mot de passe.
+              </div>";
+    }
+
+
+    ?>
+
     <h2>Entrez votre mail et votre mot de passe.</h2>
     
     <input type="hidden" name="URL" value="ordi-centrale.html" readonly />
