@@ -42,7 +42,7 @@
 
     <h2>Entrez votre mail et votre mot de passe.</h2>
     
-    <input type="hidden" name="URL" value="ordi-centrale.html" readonly />
+    <input type="hidden" name="URL" value="ordi-centrale.php" readonly />
 
     <section class="row">
       <label for="email">Mail:</label>

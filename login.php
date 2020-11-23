@@ -35,25 +35,42 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email
             exit();
         }
     }
+    if ($url == "ordi-unlock.php"){
+        if ($mdp == "List'&Love"){
+            $host = $_SERVER['HTTP_HOST'];
+            $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+            $extra = 'final.php';
+            header("Location: http://$host$uri/$extra");
+            exit();
+        }else{
+            echo "Mauvais mot de passe";
+            $host = $_SERVER['HTTP_HOST'];
+            $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+            header("Location: http://$host$uri/$url");
+            exit();
+        }
+    }
 }else{
     if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND isset($_POST["email"])){
     $url = $_POST['URL'];
     $mdp = $_POST['MotDePasse'];
     $email = $_POST["email"];
-    if ($email == "julie.bruant@centrale-marseille.fr" AND $mdp == "ELLIPSIS"){
-            echo "Bonne combinaison.";
-            $host = $_SERVER['HTTP_HOST'];
-            $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-            $extra = 'ordi-unlock.php';
-            header("Location: http://$host$uri/$extra");
-            exit();
-    }else{
-            echo "Mauvais mot de passe";
-            $host = $_SERVER['HTTP_HOST'];
-            $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-            $extra = 'ordi-centrale.php?error';
-            header("Location: http://$host$uri/$extra");
-            exit();
+    if ($url == "ordi-centrale.php"){
+        if ($email == "julie.bruant@centrale-marseille.fr" AND $mdp == "ELLIPSIS"){
+                echo "Bonne combinaison.";
+                $host = $_SERVER['HTTP_HOST'];
+                $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+                $extra = 'ordi-unlock.php';
+                header("Location: http://$host$uri/$extra");
+                exit();
+        }else{
+                echo "Mauvais mot de passe";
+                $host = $_SERVER['HTTP_HOST'];
+                $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+                $extra = 'ordi-centrale.php?error';
+                header("Location: http://$host$uri/$extra");
+                exit();
+        }
     }
 
 }
