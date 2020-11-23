@@ -50,7 +50,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <img src="http://18.192.30.155/images/post-it/quart3.png" alt="" style="width: 100%;">
+      <img src="images/post-it/quart3.png" alt="" style="width: 100%;">
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
       </div>
