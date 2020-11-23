@@ -85,7 +85,7 @@
   <?php
   if (isset($_POST["ip"])) {
     $ip = $_POST["ip"];
-    if ($ip = "13.59.78.249") {
+    if ($ip == "13.59.78.249") {
       echo '
       <!-- Modal locker-content -->
       <div class="modal fade bd-example-modal-lg" id="locker-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
