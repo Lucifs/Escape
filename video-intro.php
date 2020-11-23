@@ -4,17 +4,16 @@
 ?>
 <html>
 <head>
-  <title>Escape</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
-<style type="text/css">
-	body {
-		margin:20px;
-	}
-
-
-</style>
+	<title>Escape</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
+	<style type="text/css">
+		body {
+			margin:20px;
+		}
+	</style>
 </head>
 
 <body>
