@@ -91,13 +91,15 @@
       <div class="modal fade bd-example-modal-lg" id="locker-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
           <div class="modal-content modal-content-dark" style="height: 100%;">
+          <div class="modal-header">
+          Contenu du locker
+          </div>
             <!-- <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
             </div> -->
-            Contenu du locker :
             <div class="modal-body pdf-body">
               <iframe src="uploads/locker-content.png" style="width:100%; height: 100%;"></iframe>
             </div>

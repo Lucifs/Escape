@@ -69,7 +69,14 @@
         </button>
       </div> -->
       <div class="modal-body text-center" style="height: 97%;">
-        <a href="#scrapModal" target="_self"data-toggle="modal" data-target="#post-it" data-dismiss="modal"><img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;" ></a>
+        <!-- <a href="#scrapModal" target="_self"data-toggle="modal" data-target="#post-it" data-dismiss="modal"> -->
+          <img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
+
+          <map id="map1606155675407" name="map1606155675407">
+            <area shape="rect" coords="320,141,637,456" title="" alt="" href="quart3" target="_self">
+          </map>
+        <!-- </a> -->
+
       </div>
       <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
@@ -192,7 +199,7 @@
 
 
 	<div class="fullHeight text-center page">
-		<img class="fullHeight" src="images/iphone.png" usemap="#map1605569696870">
+		<img class="fullHeight" src="images/iphone.png" usemap="#map1605569696870" draggable="false">
 
 		<map id="map1605569696870" name="map1605569696870">
 			<area shape="rect" coords="87,154,190,256" title="calendar" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#calendar">
@@ -226,7 +233,7 @@
     	$('img[usemap]').rwdImageMaps();
 	});
 
-	$("#photos").onClick(function(e) {
+  $('#photos').on('shown.bs.modal', function (e) {
     	$('img[usemap]').rwdImageMaps();
 	});
 </script>
