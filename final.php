@@ -2,9 +2,10 @@
 <html>
 
 <head>
- 	<title>Escape</title>
+ 	<title>Royalescape - Salle du coffre</title>
  	<meta charset="UTF-8" />
  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/style-armoire.css">
 </head>

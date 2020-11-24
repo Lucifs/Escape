@@ -4,9 +4,10 @@
 <html>
 
 <head>
-	<title>Escape</title>
+	<title>Royalescape - iPhone de Julie</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style-smartphone.css">
 </head>
@@ -14,7 +15,7 @@
 <body>
 
 <!-- Modal calendar -->
-<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="calendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" data-animate-css-in='animate__zoomIn' data-animate-out='animate__flipOutY' id="calendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="height: 90%;">
     <div class="modal-content modal-content-dark" style="height: 100%;">
       <!-- <div class="modal-header">
