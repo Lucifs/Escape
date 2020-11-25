@@ -5,9 +5,15 @@
  	<title>Royalescape - Salle du coffre</title>
  	<meta charset="UTF-8" />
  	<meta name="viewport" content="width=device-width, initial-scale=1">
- 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/style-armoire.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -60,8 +66,8 @@
       		<div class="text-center">🎬 Timecode</div>
 
       	</div>
-        <div class="modal-body auth">
-          <form>
+        <form method="post">
+          <div class="modal-body auth">
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Ce coffre est protégé par un code à quatre chiffres</label>
               <input 
@@ -77,12 +83,12 @@
                         maxlength="10"
                         required>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Unlock</button>
-      </div>
+        <div class="modal-footer">
+          <input class="btn btn-light btn-submit" name="submit" accesskey="l" value="Unlock" tabindex="4" type="submit">
+        </div>
+      </form>
     </div>
   </div>
 </div>

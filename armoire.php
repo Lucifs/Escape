@@ -44,7 +44,7 @@
       </div>
       <div class="modal-footer">
         <!-- Si tu vois ce bout de code, il est pas sécurisé nous nique pas stp. Allez tapper Arthur mais jouez le jeu :) -->
-        <form  class="text-center" style="width: 40%;" action="login.php" method="post">
+       <!--  <form  class="text-center" style="width: 40%;" action="login.php" method="post">
           <input type="button" class="btn btn-secondary"
           <?php if (isset($_GET["error"])) {echo "disabled";}?>
                   data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="1" />
@@ -57,7 +57,19 @@
           <input type="button" class="btn btn-secondary"
           <?php if (isset($_GET["error"])) {echo "disabled";}?>
                   data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="4" />
-        </form>
+        </form> -->
+        <form action="login.php" method="post" autocomplete="off">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Numéro :</label>
+              <input type="hidden" name="affiches" value="ordi-unlock.php" readonly />
+              <input type="text" class="form-control" id="recipient-name" name="MotDePasse" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
+            </div>
+            <div class="modal-footer">
+              <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
+              <input class="btn-sumbit btn-danger btn" name="submit" accesskey="l" value="Access" tabindex="4" type="submit">
+              <!--<button type="button" class="btn btn-danger" onclick="window.location.href='final.php';">Access</button> -->
+            </div>
+          </form>
       </div>
     </div>
   </div>
