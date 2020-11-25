@@ -26,25 +26,34 @@
         <div class="modal-body auth">
           <form>
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Ce casier est protégé par un code à quatre chiffres</label>
-              <input 
-                        type="text"
-                        pattern="[0-9][0-9][0-9][0-9]"
-                        inputmode="numeric"
-                        class="form-control"
-                        id="recipient-name"
-                        name="organisation-name"
-                        aria-invalid="false"
-                        autocomplete="off"
-                        placeholder="0000"
-                        maxlength="10"
-                        required>
+              <label for="recipient-name" class="col-form-label">
+                <?php
+                if (isset($_GET["error"])) {
+
+                  echo "<p id=\"demo\"></p>";
+                }
+
+
+                ?>
+              </label>
             </div>
           </form>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Unlock</button>
+        <!-- Si tu vois ce code, il est pas sécurisé nous nique pas stp. Allez tapper Arthur mais jouez le jeu :) -->
+        <button type="button" class="btn btn-secondary"
+        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
+                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Four</button>
+        <button type="button" class="btn btn-secondary"
+        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
+                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Tres</button>
+        <button type="button" class="btn btn-secondary"
+        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
+                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Two</button>
+        <button type="button" class="btn btn-secondary"
+        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
+                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Uno</button>
       </div>
     </div>
   </div>
@@ -133,4 +142,37 @@
     	$('img[usemap]').rwdImageMaps();
 	});
 </script>
+
+
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 2, 2020 <?php if (isset($_POST["countdown"])) {echo "15:37:25";}?>").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 </body>

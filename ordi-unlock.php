@@ -38,7 +38,7 @@
           ?>
           <form action="login.php" method="post" autocomplete="off">
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Exit with :</label>
+              <label for="recipient-name" class="col-form-label">Nom de l'organisation :</label>
               <input type="hidden" name="URL" value="ordi-unlock.php" readonly />
               <input type="text" class="form-control" id="recipient-name" name="MotDePasse" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
             </div>
@@ -132,7 +132,7 @@
         </button>
       </div> -->
         <div class="modal-body pdf-body">
-          <iframe src="uploads/decrypt_unicode.pdf" style="width:100%; height: 100%;"></iframe>
+            <iframe id="iframe" scrolling="yes" width="100%" id="iframe" src="uploads/decrypt_unicode.pdf" style="height: 650px; max-height: 100%; width: 100%; overflow: auto;"></iframe>
         </div>
       </div>
     </div>
@@ -149,10 +149,7 @@
         </button>
       </div> -->
         <div class="modal-body pdf-body">
-          <!-- <iframe src="uploads/invitation_casino.pdf" style="width:100%; height: 100%;"></iframe> -->
-          <object data="uploads/invitation_casino.pdf" type="application/pdf" style="width:100%; height: 100%;">
-            <embed src="uploads/invitation_casino.pdf" type="application/pdf" style="width:100%; height: 100%;" />
-          </object>
+          <iframe src="uploads/invitation_casino.pdf" style="height: 650px; max-height: 100%; width: 100%; overflow: auto;"></iframe>
         </div>
       </div>
     </div>
@@ -169,7 +166,7 @@
         </button>
       </div> -->
         <div class="modal-body pdf-body">
-          <iframe src="uploads/neurchi.png" style="width:100%; height: 100%;"></iframe>
+          <iframe src="uploads/neurchi.png" style="height: 500px; max-height: 100%; width: 100%; overflow: auto;"></iframe>
         </div>
       </div>
     </div>
@@ -187,7 +184,7 @@
         </button>
       </div> -->
         <div class="modal-body pdf-body">
-          <iframe src="https://classrooms.centrale-marseille.fr/html5client/join" style="width:100%; height: 100%;"></iframe>
+          <iframe src="https://classrooms.centrale-marseille.fr/html5client/join" style="height: 650px; max-height: 100%; width: 100%; overflow: auto;"></iframe>
         </div>
       </div>
     </div>
