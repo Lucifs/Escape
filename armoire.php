@@ -5,16 +5,16 @@
   <title>Escape</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style-armoire.css">
-  </head>
+  <link rel="icon" href="images/favicon.ico">
+</head>
 
 <body>
 
 <!-- Modal Casier A -->
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Locker A</h5>
@@ -23,10 +23,12 @@
         </button>
       </div>
       <div class="modal-body">
+        <img src="images/7diff.png" style="width: 100%;">
         <div class="modal-body auth">
-          <form>
+          
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">
+              <label for="recipient-name" class="col-form-label"><!-- 
+                <?php echo date('M j');?> -->
                 <?php
                 if (isset($_GET["error"])) {
 
@@ -37,23 +39,25 @@
                 ?>
               </label>
             </div>
-          </form>
+          
         </div>
       </div>
       <div class="modal-footer">
-        <!-- Si tu vois ce code, il est pas sécurisé nous nique pas stp. Allez tapper Arthur mais jouez le jeu :) -->
-        <button type="button" class="btn btn-secondary"
-        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
-                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Four</button>
-        <button type="button" class="btn btn-secondary"
-        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
-                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Tres</button>
-        <button type="button" class="btn btn-secondary"
-        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
-                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Two</button>
-        <button type="button" class="btn btn-secondary"
-        <?php if (isset($_GET["error"])) {echo "disabled";}?> 
-                data-dismiss="modal" href="#scrapModal" target="_self"data-toggle="modal" data-target="#locker-content">Uno</button>
+        <!-- Si tu vois ce bout de code, il est pas sécurisé nous nique pas stp. Allez tapper Arthur mais jouez le jeu :) -->
+        <form  class="text-center" style="width: 40%;" action="login.php" method="post">
+          <input type="button" class="btn btn-secondary"
+          <?php if (isset($_GET["error"])) {echo "disabled";}?>
+                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="1" />
+          <input type="button" class="btn btn-secondary"
+          <?php if (isset($_GET["error"])) {echo "disabled";}?>
+                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="2" />
+          <input type="button" class="btn btn-secondary"
+          <?php if (isset($_GET["error"])) {echo "disabled";}?>
+                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="3" />
+          <input type="button" class="btn btn-secondary"
+          <?php if (isset($_GET["error"])) {echo "disabled";}?>
+                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="4" />
+        </form>
       </div>
     </div>
   </div>
@@ -146,7 +150,7 @@
 
   <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 2, 2020 <?php if (isset($_POST["countdown"])) {echo "15:37:25";}?>").getTime();
+var countDownDate = new Date("Nov 25 , 2020 <?php if (isset($_GET["countdown"])) {echo ($_GET["countdown"]);}?>").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

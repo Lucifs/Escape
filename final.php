@@ -63,7 +63,7 @@
         <div class="modal-body auth">
           <form>
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Ce casier est protégé par un code à quatre chiffres</label>
+              <label for="recipient-name" class="col-form-label">Ce coffre est protégé par un code à quatre chiffres</label>
               <input 
                         type="text"
                         pattern="[0-9][0-9][0-9][0-9]"

@@ -8,10 +8,6 @@ html, body {
    margin: 0;
 }
 
-area:focus {
-   outline: none;
-}
-
 .modal-content-dark {
    color: white;
    background: grey;
@@ -29,9 +25,6 @@ area:focus {
    padding: 2px;
 }
 
-
-
-@media (max-width: 1000px) {
-   
-
+area:focus {
+   outline: none;
 }
