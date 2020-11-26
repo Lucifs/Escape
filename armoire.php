@@ -52,6 +52,7 @@
         </div>
       </div>
       <div class="modal-footer">
+        <p>Attention : Pénalité pour chaque essai</p>
         <form method="post" autocomplete="off">
             <div class="form-group">
               <input type="hidden" name="affiches" value="ordi-unlock.php" readonly />
@@ -68,7 +69,7 @@
   </div>
   </div>
 
-<!-- php pour ouvrir le modal locker -->
+<!-- php pour ouvrir le modal locker A -->
   <?php
   if (isset($_POST["numero"])) {
     $numero = $_POST["numero"];
@@ -178,7 +179,39 @@
   }
   ?>
 
-<!-- Modal lockerBcontent -->
+<!-- Modal locker B -->
+  <div class="modal fade" id="locker2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-content-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Locker B</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body auth">
+          <form method="post">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Ce document est protégé par un mot de passe</label>
+              <input type="text" inputmode="numeric" class="form-control" id="recipient-name" name="code2" aria-invalid="false" autocomplete="off" placeholder="" maxlength="12" required>
+            </div>
+            <div class="modal-footer">
+              <input class="btn btn-danger btn-submit" name="submit" accesskey="l" value="Ouvrir" tabindex="4" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- php pour ouvrir le modal locker B -->
+  <?php
+  if (isset($_POST["code2"])) {
+    $code = $_POST["code2"];
+    if ($code == "1664") {
+      echo '
+    <!-- Modal lockerBcontent -->
     <div class="modal fade" id="lockerBcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
@@ -192,6 +225,24 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script>
+      $(document).ready(()=> {
+        $("#lockerBcontent").modal("show");
+      });
+      </script>
+
+
+      ';
+    }
+    else {
+      $host = $_SERVER['HTTP_HOST'];
+                $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+                $extra = 'armoire.php?error';
+                header("Location: http://$host$uri/$extra");
+    }
+  }
+  ?>
 
 <!-- Modal post-it Quart 1-->
   <div class="modal fade" id="quart1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -211,11 +262,79 @@
   </div>
   </div>
 
+<!-- Modal locker C -->
+  <div class="modal fade" id="locker3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-content-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Locker C</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body auth">
+          <form method="post">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Ce document est protégé par un mot de passe</label>
+              <input type="text" inputmode="numeric" class="form-control" id="recipient-name" name="code3" aria-invalid="false" autocomplete="off" placeholder="" maxlength="12" required>
+            </div>
+            <div class="modal-footer">
+              <input class="btn btn-danger btn-submit" name="submit" accesskey="l" value="Ouvrir" tabindex="4" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- php pour ouvrir le modal locker C -->
+  <?php
+  if (isset($_POST["code3"])) {
+    $code = $_POST["code3"];
+    if ($code == "8314") {
+      echo '
+   <!-- Modal lockerCcontent -->
+    <div class="modal fade" id="lockerCcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-dark">
+          <audio controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
+          <img src="images/lockerC.png" alt="" style=" margin-top: -50px; width: 100%;" usemap="#personnalmap">
+
+          <map id="personnalmap" name="personnalmap">
+            <area shape="poly" coords="157,695,412,572,446,662,225,850" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
+            <area shape="poly" coords="406,1011,553,895,568,998,549,948" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
+            <area shape="poly" coords="255,910,358,1032,319,1053" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
+            <area shape="poly" coords="727,593,956,556,970,604,1019,599,1075,944,792,989" title="files" alt="" href="uploads/sample_file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
+            
+          </map>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script>
+      $(document).ready(()=> {
+        $("#lockerCcontent").modal("show");
+      });
+      </script>
+
+
+      ';
+    }
+    else {
+      $host = $_SERVER['HTTP_HOST'];
+                $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+                $extra = 'armoire.php?error';
+                header("Location: http://$host$uri/$extra");
+    }
+  }
+  ?>
+
 <!-- Modal lockerCcontent -->
     <div class="modal fade" id="lockerCcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
-          <audio controls="true" autoplay="true" style="outline: none; height:45px; width: 100%; margin-top:5px;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
+          <audio controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
           <img src="images/lockerC.png" alt="" style=" margin-top: -50px; width: 100%;" usemap="#personnalmap">
 
           <map id="personnalmap" name="personnalmap">
@@ -245,16 +364,16 @@
 
 
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="largelocker" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Locker</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Locker qui sert pas à grand chose mais c'est iconique</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        Ceci est le corps du locker large
+      <div class="modal-body text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
@@ -273,8 +392,8 @@
 		
 			<map id="map1605965744173" name="map1605965744173">
 				<area shape="rect" coords="1160.9999752128906,494.99146080859373,1305.0113392128906,666.0028248085937" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker1">
-				<area shape="rect" coords="1161.0000057304687,668.997137078125,1305.0113697304687,847.0085010781249" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#lockerBcontent">
-				<area shape="rect" coords="1156.97917,846.9792005175782,1306.3125100000002,1197.3125405175783" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#lockerCcontent">
+				<area shape="rect" coords="1161.0000057304687,668.997137078125,1305.0113697304687,847.0085010781249" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker2">
+				<area shape="rect" coords="1156.97917,846.9792005175782,1306.3125100000002,1197.3125405175783" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker3">
 				<area shape="rect" coords="1063.0000440234376,820.9999829882813,1125.3333840234375,871.3333229882813" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#largelocker">
 			</map>
 	</div>

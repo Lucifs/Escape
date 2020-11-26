@@ -154,22 +154,30 @@
     </div>
   </div>
 
-  <!-- Modal neurchi -->
-  <div class="modal fade bd-example-modal-lg" id="neurchi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
-      <div class="modal-content modal-content-dark" style="height: 100%;">
-        <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
+<!-- Modal neurchi -->
+<!-- Modal photos -->
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="neurchi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div> -->
-        <div class="modal-body pdf-body">
-          <iframe src="uploads/neurchi.png" style="height: 500px; max-height: 100%; width: 100%; overflow: auto;"></iframe>
-        </div>
+      <div class="modal-body text-center" style="height: 97%;">
+        <!-- <a href="#scrapModal" target="_self"data-toggle="modal" data-target="#post-it" data-dismiss="modal"> -->
+          <img src="images/neurchi.jpeg" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
+
+          <map id="map1606155675407" name="map1606155675407">
+            <area shape="rect" coords="320,141,637,456" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
+          </map>
+        <!-- </a> -->
+
       </div>
     </div>
   </div>
+</div>
 
 
   <!-- Modal echo -->
