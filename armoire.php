@@ -19,7 +19,7 @@
 <body>
 
 <!-- Modal Casier A -->
-<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
@@ -66,10 +66,10 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
 <!-- php pour ouvrir le modal locker -->
-<?php
+  <?php
   if (isset($_POST["numero"])) {
     $numero = $_POST["numero"];
     if ($numero == "2") {
@@ -147,13 +147,11 @@
     </div>
   </div>
 
-
-
 <!-- Modal pdfA -->
-<?php
+  <?php
   if (isset($_POST["pdfA"])) {
     $pdfA = $_POST["pdfA"];
-    if ($pdfA == "bomb") {
+    if ($pdfA == "bombe") {
       echo '
       <div class="modal fade bd-example-modal-lg" id="fichierA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
@@ -180,26 +178,72 @@
   }
   ?>
 
+<!-- Modal lockerBcontent -->
+      <div class="modal fade" id="lockerAcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-dark">
+          <img src="images/lockerA.png" alt="" style="width: 100%;" usemap="">
 
+          <map id="" name="">
+            <area shape="" coords="" href="">
+          </map>
+        </div>
+      </div>
+    </div>
 
-<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal post-it Quart 3-->
+<div class="modal fade" id="post-it" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Locker B</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Post-it !</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        Ceci est le corps du locker B
-      </div>
+      <img src="images/post-it/quart1.png" alt="" style="width: 100%;">
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal lockerB -->
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="lockerB" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+        <!-- <a href="#scrapModal" target="_self"data-toggle="modal" data-target="#post-it" data-dismiss="modal"> -->
+          <img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
+
+          <map id="map1606155675407" name="map1606155675407">
+            <area shape="rect" coords="320,141,637,456" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
+          </map>
+        <!-- </a> -->
+
+      </div>
+      <div class="text-center" style="height: 5%; padding-bottom: 10px; background-color: black; border-radius: 5px;">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button data-dismiss="modal" style="
+            border-radius: 2px;
+            background: white;
+            width: 200px;
+            height: 5px;
+            border-style: none;
+            outline: none;">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -273,6 +317,9 @@
     $('img[usemap]').rwdImageMaps();
   });
   $('#lockerAcontent').on('shown.bs.modal', function (e) {
+    $('img[usemap]').rwdImageMaps();
+  });
+  $('#lockerB').on('shown.bs.modal', function (e) {
     $('img[usemap]').rwdImageMaps();
   });
 </script>
