@@ -88,7 +88,7 @@
             height: 5px;
             border-style: none;
             outline: none;">
-            </button>
+        </button>
       </div>
     </div>
   </div>

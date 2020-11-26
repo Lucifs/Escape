@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style-armoire.css">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -23,7 +29,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="images/7diff.png" style="width: 100%;">
+        <img src="images/7diff.png" style="width: 100%;" alt="" usemap="#map1606346709645">
+          <map id="map1606346709645" name="map1606346709645">
+            <area shape="rect" coords="177,265,219,307" id="complete1" title="" alt="" href="#scrapModal" target="_self" onclick="document.getElementById('numero').value = 1;">
+            <area shape="rect" coords="460,268,501,307" id="complete2" title="" alt="" href="#scrapModal" target="_self" onclick="document.getElementById('numero').value = 2;">
+            <area shape="rect" coords="730,263,774,306" id="complete3" title="" alt="" href="#scrapModal" target="_self" onclick="document.getElementById('numero').value = 3;">
+            <area shape="rect" coords="1005,267,1040,307" id="complete4" title="" alt="" href="#scrapModal" target="_self" onclick="document.getElementById('numero').value = 4;">
+          </map>
         <div class="modal-body auth">
           
             <div class="form-group">
@@ -34,35 +46,16 @@
 
                   echo "<p id=\"demo\"></p>";
                 }
-
-
                 ?>
               </label>
             </div>
-          
         </div>
       </div>
       <div class="modal-footer">
-        <!-- Si tu vois ce bout de code, il est pas sécurisé nous nique pas stp. Allez tapper Arthur mais jouez le jeu :) -->
-       <!--  <form  class="text-center" style="width: 40%;" action="login.php" method="post">
-          <input type="button" class="btn btn-secondary"
-          <?php if (isset($_GET["error"])) {echo "disabled";}?>
-                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="1" />
-          <input type="button" class="btn btn-secondary"
-          <?php if (isset($_GET["error"])) {echo "disabled";}?>
-                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="2" />
-          <input type="button" class="btn btn-secondary"
-          <?php if (isset($_GET["error"])) {echo "disabled";}?>
-                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="3" />
-          <input type="button" class="btn btn-secondary"
-          <?php if (isset($_GET["error"])) {echo "disabled";}?>
-                  data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#locker-content" style="width: 20%;" name="button" value="4" />
-        </form> -->
-        <form action="login.php" method="post" autocomplete="off">
+        <form method="post" autocomplete="off">
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Numéro :</label>
               <input type="hidden" name="affiches" value="ordi-unlock.php" readonly />
-              <input type="text" class="form-control" id="recipient-name" name="MotDePasse" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
+              <input type="text" class="form-control" id="numero" name="numero" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
             </div>
             <div class="modal-footer">
               <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
@@ -74,6 +67,44 @@
     </div>
   </div>
 </div>
+
+<!-- php pour ouvrir le modal locker -->
+
+  <?php
+  if (isset($_POST["numero"])) {
+    $numero = $_POST["numero"];
+    if ($numero == "2") {
+      echo '
+      <!-- Modal lockerAcontent -->
+      <div class="modal fade" id="lockerAcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-content-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Post-it !</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <img src="images/lockerA.png" alt="" style="width: 100%;">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script>
+      $(document).ready(()=> {
+        $("#lockerAcontent").modal("show");
+      });
+      </script>';
+    }
+  }
+  ?>
+
+
+
+
 
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -157,10 +188,12 @@
 	$(document).ready(function(e) {
     	$('img[usemap]').rwdImageMaps();
 	});
+  $('#locker1').on('shown.bs.modal', function (e) {
+    $('img[usemap]').rwdImageMaps();
+});
 </script>
 
-
-  <script>
+<script>
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 25 , 2020 <?php if (isset($_GET["countdown"])) {echo ($_GET["countdown"]);}?>").getTime();
 
