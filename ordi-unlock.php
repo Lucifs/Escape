@@ -82,8 +82,7 @@
   </div>
 
   <!-- php pour ouvrir le modal locker -->
-
-  <?php
+<?php
   if (isset($_POST["ip"])) {
     $ip = $_POST["ip"];
     if ($ip == "13.59.78.249") {

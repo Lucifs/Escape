@@ -69,26 +69,20 @@
 </div>
 
 <!-- php pour ouvrir le modal locker -->
-
-  <?php
+<?php
   if (isset($_POST["numero"])) {
     $numero = $_POST["numero"];
     if ($numero == "2") {
       echo '
       <!-- Modal lockerAcontent -->
       <div class="modal fade" id="lockerAcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Post-it !</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <img src="images/lockerA.png" alt="" style="width: 100%;">
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-          </div>
+          <img src="images/lockerA.png" alt="" style="width: 100%;" usemap="#map1606349426750">
+
+          <map id="map1606349426750" name="map1606349426750">
+            <area shape="rect" coords="706,477,1037,952" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#liseuse">
+          </map>
         </div>
       </div>
     </div>
@@ -97,12 +91,94 @@
       $(document).ready(()=> {
         $("#lockerAcontent").modal("show");
       });
-      </script>';
+      </script>
+
+
+      ';
+    }
+    else {
+      $host = $_SERVER['HTTP_HOST'];
+                $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+                $extra = 'armoire.php?error';
+                header("Location: http://$host$uri/$extra");
     }
   }
   ?>
 
+<!-- Modal liseuse -->
+  <div class="modal fade" id="liseuse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-content-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Liseuse verrouillée</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 
+        <div class="modal-body auth">
+          <?php
+          if (isset($_GET["error2"])) {
+
+            echo "<div id=\"msg\" class=\"errors\" style=\"
+                                  color: #dc3545;\">
+                Mauvais identifiant / mot de passe.
+              </div>";
+            echo '<script type="text/javascript" src="js/jquery.min.js"></script>
+                  <script>
+                  $(document).ready(()=> {
+                    $("#liseuse").modal("show");
+                  });
+                  </script>';
+          }
+          ?>
+          <form method="post" autocomplete="off">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Mot de passe :</label>
+              <input type="hidden" name="URL" value="armoire.php" readonly />
+              <input type="text" class="form-control" id="pdfA" name="pdfA" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
+            </div>
+            <div class="modal-footer">
+              <input class="btn-sumbit btn-danger btn" name="submit" accesskey="l" value="Access" tabindex="4" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Modal pdfA -->
+<?php
+  if (isset($_POST["pdfA"])) {
+    $pdfA = $_POST["pdfA"];
+    if ($pdfA == "bomb") {
+      echo '
+      <div class="modal fade bd-example-modal-lg" id="fichierA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+          <div class="modal-content modal-content-dark" style="height: 100%;">
+            <div class="modal-body pdf-body">
+                <iframe id="iframe" scrolling="yes" width="100%" id="iframe" src="uploads/fichierA.pdf" style="height: 650px; max-height: 100%; width: 100%; overflow: auto;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script>
+      $(document).ready(()=> {
+        $("#fichierA").modal("show");
+      });
+      </script>
+      ';
+    }
+    else {
+      $host = $_SERVER['HTTP_HOST'];
+      $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
+      header("Location: http://$host$uri/armoire.php?error2");
+    }
+  }
+  ?>
 
 
 
@@ -124,6 +200,11 @@
     </div>
   </div>
 </div>
+
+
+
+
+
 
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -190,12 +271,15 @@
 	});
   $('#locker1').on('shown.bs.modal', function (e) {
     $('img[usemap]').rwdImageMaps();
-});
+  });
+  $('#lockerAcontent').on('shown.bs.modal', function (e) {
+    $('img[usemap]').rwdImageMaps();
+  });
 </script>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 25 , 2020 <?php if (isset($_GET["countdown"])) {echo ($_GET["countdown"]);}?>").getTime();
+var countDownDate = new Date("Nov 27 , 2020 <?php if (isset($_GET["countdown"])) {echo ($_GET["countdown"]);}?>").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

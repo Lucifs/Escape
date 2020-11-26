@@ -74,7 +74,7 @@
           <img src="images/smartphone/photos.jpg" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
 
           <map id="map1606155675407" name="map1606155675407">
-            <area shape="rect" coords="320,141,637,456" title="" alt="" href="quart3" target="_self">
+            <area shape="rect" coords="320,141,637,456" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
           </map>
         <!-- </a> -->
 
