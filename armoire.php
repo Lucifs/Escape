@@ -215,8 +215,8 @@
     <div class="modal fade" id="lockerCcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
-          <audio controls="true" autoplay="true"><source src="uploads/audio.mp3" type="audio/mp3"></audio>
-          <img src="images/lockerC.png" alt="" style="width: 100%;" usemap="#personnalmap">
+          <audio controls="true" autoplay="true" style="outline: none; height:45px; width: 100%; margin-top:5px;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
+          <img src="images/lockerC.png" alt="" style=" margin-top: -50px; width: 100%;" usemap="#personnalmap">
 
           <map id="personnalmap" name="personnalmap">
             <area shape="poly" coords="157,695,412,572,446,662,225,850" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
