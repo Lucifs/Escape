@@ -294,7 +294,8 @@
     $code = $_POST["code3"];
     if ($code == "8314") {
       echo '
-   <!-- Modal lockerCcontent -->
+      
+  <!-- Modal lockerCcontent -->
     <div class="modal fade" id="lockerCcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
@@ -306,11 +307,12 @@
             <area shape="poly" coords="406,1011,553,895,568,998,549,948" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
             <area shape="poly" coords="255,910,358,1032,319,1053" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
             <area shape="poly" coords="727,593,956,556,970,604,1019,599,1075,944,792,989" title="files" alt="" href="uploads/sample_file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
-            
           </map>
         </div>
       </div>
     </div>
+
+   
     <script type="text/javascript" src="js/jquery.min.js"></script>
       <script>
       $(document).ready(()=> {
@@ -330,23 +332,6 @@
   }
   ?>
 
-<!-- Modal lockerCcontent -->
-    <div class="modal fade" id="lockerCcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content modal-content-dark">
-          <audio controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
-          <img src="images/lockerC.png" alt="" style=" margin-top: -50px; width: 100%;" usemap="#personnalmap">
-
-          <map id="personnalmap" name="personnalmap">
-            <area shape="poly" coords="157,695,412,572,446,662,225,850" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
-            <area shape="poly" coords="406,1011,553,895,568,998,549,948" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
-            <area shape="poly" coords="255,910,358,1032,319,1053" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
-            <area shape="poly" coords="727,593,956,556,970,604,1019,599,1075,944,792,989" title="files" alt="" href="uploads/sample_file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
-            
-          </map>
-        </div>
-      </div>
-    </div>
 
 <!-- Modal liste sans reponse -->
   <div class="modal fade bd-example-modal-lg" id="listesansrep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
