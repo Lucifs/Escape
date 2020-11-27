@@ -66,7 +66,8 @@
       		<div class="text-center">🎬 Timecode</div>
 
       	</div>
-        <form method="post">
+        <form action="login.php" method="post">
+          <input type="hidden" name="URL" value="final.php" readonly />
           <div class="modal-body auth">
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Ce coffre est protégé par un code à quatre chiffres</label>
@@ -76,7 +77,7 @@
                         inputmode="numeric"
                         class="form-control"
                         id="recipient-name"
-                        name="organisation-name"
+                        name="MotDePasse"
                         aria-invalid="false"
                         autocomplete="off"
                         placeholder="0000"

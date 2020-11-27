@@ -42,9 +42,10 @@
 
           ?>
           <form action="login.php" method="post" autocomplete="off">
+            <input type="hidden" name="URL" value="final2.php" readonly />
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Identifiant</label>
-              <input type="text" class="form-control" name="identifiant" value="" placeholder="prenom.nom" required />
+              <input type="text" class="form-control" name="email" value="" placeholder="prenom.nom" required /> <!-- le nom c'est email vu que j'ai la flemme -->
               <label for="recipient-name" class="col-form-label">Mot de passe</label>
               <input type="text" class="form-control" id="recipient-name" name="MotDePasse" aria-invalid="false" autocomplete="off" placeholder="mot de passe" maxlength="10" required>
             </div>
@@ -137,12 +138,14 @@
 
       ';
     }
+    // la suite fait tout bugger
+    /*
     else {
       $host = $_SERVER['HTTP_HOST'];
                 $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
                 $extra = 'armoire.php?error';
                 header("Location: http://$host$uri/$extra");
-    }
+    }*/
   }
   ?>
 
