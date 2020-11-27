@@ -18,6 +18,10 @@
 
 <body>
 
+
+
+
+
 <!-- Modal Casier A -->
   <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="locker1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -59,6 +63,7 @@
               <input type="number" min="1" max="4" value="1" class="form-control" id="numero" name="numero" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
             </div>
             <div class="modal-footer">
+              <div id="temps_attente"></div>
               <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
               <input class="btn-sumbit btn-danger btn" name="submit" accesskey="l" value="Access" tabindex="4" type="submit" id="b30">
               <!--<button type="button" class="btn btn-danger" onclick="window.location.href='final.php';">Access</button> -->
@@ -99,20 +104,24 @@
       ';
     }
     else{
-    /*  $host = $_SERVER['HTTP_HOST'];
-                $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-                $extra = 'armoire.php?error';
-                header("Location: http://$host$uri/$extra");
-    }*/
-    /*echo "
-    <script type=\"text/javascript\">
-      $(document).ready(function(){
-        $('#b30').hide();
-        console.log('cache');
-        setTimeout(() => {  $('#b30').show() }, 30000);
-      }
-    </script>
-    ";*/
+      echo
+      '<!-- Modal welcome -->
+      <div class="modal fade bd-example-modal-lg" data-animate-in=\'animate__zoomInUp\' data-animate-out=\'animate__flipOutY\' id="welcome_error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-content-dark">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Bienvenue dans la salle du coffre !</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Mauvais choix, attendez 5 min ...
+            </div>
+          </div>
+        </div>
+      </div>';
+
     }
   }
   ?>
@@ -415,6 +424,16 @@
     $('img[usemap]').rwdImageMaps();
   });
 </script>
+<!-- message d'erreur locker A -->
+<?php 
+if (!isset($_GET["hidemessage"])) {
+    echo "<script>
+    $(document).ready(function(){
+        $(\"#welcome_error\").modal('show');
+    });
+	</script>";
+}
+?>
 
 <script>
 // Set the date we're counting down to
@@ -451,7 +470,8 @@ var x = setInterval(function() {
 
 $("#b30").click(()=>{
   $("#b30").hide();
-  document.cookie = "stop=true; max-age=10" // secondes à pas changer vu que c'est juste le temps d'atteindre la page suivante
+  document.cookie = "stop=true; max-age=300"; // secondes à modifier aussi car sinon au bout de 10s on relance et on a rien
+  document.cookie = "time="+Date.now().toString()+";max-age=300";
 });
 
 function getCookie(cname) {
@@ -470,12 +490,21 @@ function getCookie(cname) {
   return "";
 }
 var stop = getCookie("stop");
+var time = parseInt(getCookie("time"),10); // renvoie le temps de base (dans la base 10)
+var deltaT = Date.now() - time; // renvoie le temps écoulé en ms
 if (stop == "true"){
   $("#b30").hide();
-  setTimeout(() => {  $('#b30').show() }, 5 * 60 * 1000); // milisecondes
+  setTimeout(() => {  $('#b30').show() },5 * 60 * 1000 - deltaT); // milisecondes
 }
 
 
+if(time != NaN){
+  $("#temps_attente").html("Il reste " + (Math.round(300 - deltaT/1000)).toString()+"s à attendre");
+}
+
 document.formulaire.submit.disabled=true;
 </script>
+
+
+
 </body>
