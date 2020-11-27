@@ -21,8 +21,11 @@
  
 
 	<div class="fullHeight text-center page">
-		<img class="fullHeight" src="images/ordi-final2.png" usemap="#">
-
+		<img class="fullHeight" src="images/ordi-final2.png" usemap="#map1606435175118">
+    
+    <map id="map1606435175118" name="map1606435175118">
+      <area shape="rect" coords="334,285,634,375" title="" alt="" href="button" target="_self">
+    </map>
 			
 	</div>
 
