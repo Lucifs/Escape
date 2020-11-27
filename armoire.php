@@ -56,7 +56,7 @@
         <form method="post" autocomplete="off">
             <div class="form-group">
               <input type="hidden" name="affiches" value="ordi-unlock.php" readonly />
-              <input type="text" class="form-control" id="numero" name="numero" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
+              <input type="number" min="1" max="4" value="1" class="form-control" id="numero" name="numero" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
             </div>
             <div class="modal-footer">
               <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
@@ -73,7 +73,7 @@
   <?php
   if (isset($_POST["numero"])) {
     $numero = $_POST["numero"];
-    if ($numero == "2") {
+    if ($numero == 2) {
       echo '
       <!-- Modal lockerAcontent -->
       <div class="modal fade" id="lockerAcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
