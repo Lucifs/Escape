@@ -319,7 +319,7 @@
     <div class="modal fade" id="lockerCcontent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
-          <audio controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
+          <audio id="audio_control" controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px; display:none;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
           <img src="images/lockerC.png" alt="" style=" margin-top: -50px; width: 100%;" usemap="#personnalmap">
 
           <map id="personnalmap" name="personnalmap">
@@ -422,6 +422,7 @@
   });
   $('#lockerCcontent').on('shown.bs.modal', function (e) {
     $('img[usemap]').rwdImageMaps();
+    $('#audio_control')[0].play();
   });
 </script>
 <!-- message d'erreur locker A -->
