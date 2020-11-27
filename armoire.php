@@ -60,7 +60,7 @@
             </div>
             <div class="modal-footer">
               <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
-              <input class="btn-sumbit btn-danger btn" name="submit" accesskey="l" value="Access" tabindex="4" type="submit">
+              <input class="btn-sumbit btn-danger btn" name="submit" accesskey="l" value="Access" tabindex="4" type="submit" id="b30">
               <!--<button type="button" class="btn btn-danger" onclick="window.location.href='final.php';">Access</button> -->
             </div>
           </form>
@@ -68,6 +68,7 @@
     </div>
   </div>
   </div>
+
 
 <!-- php pour ouvrir le modal locker A -->
   <?php
@@ -97,11 +98,21 @@
 
       ';
     }
-    else {
-      $host = $_SERVER['HTTP_HOST'];
+    else{
+    /*  $host = $_SERVER['HTTP_HOST'];
                 $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
                 $extra = 'armoire.php?error';
                 header("Location: http://$host$uri/$extra");
+    }*/
+    /*echo "
+    <script type=\"text/javascript\">
+      $(document).ready(function(){
+        $('#b30').hide();
+        console.log('cache');
+        setTimeout(() => {  $('#b30').show() }, 30000);
+      }
+    </script>
+    ";*/
     }
   }
   ?>
@@ -390,7 +401,7 @@
 <script type="text/javascript">
 	$(document).ready(function(e) {
     	$('img[usemap]').rwdImageMaps();
-	});
+  });
   $('#locker1').on('shown.bs.modal', function (e) {
     $('img[usemap]').rwdImageMaps();
   });
@@ -436,4 +447,35 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+<script type="text/javascript">
+
+$("#b30").click(()=>{
+  $("#b30").hide();
+  document.cookie = "stop=true; max-age=10" // secondes à pas changer vu que c'est juste le temps d'atteindre la page suivante
+});
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+var stop = getCookie("stop");
+if (stop == "true"){
+  $("#b30").hide();
+  setTimeout(() => {  $('#b30').show() }, 5 * 60 * 1000); // milisecondes
+}
+
+
+document.formulaire.submit.disabled=true;
+</script>
 </body>
