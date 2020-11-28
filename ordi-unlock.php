@@ -96,10 +96,10 @@
       echo '
       <!-- Modal locker-content -->
       <div class="modal fade bd-example-modal-lg" id="locker-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content modal-content-dark" style="height: 100%;">
           <div class="modal-header">
-          Contenu du locker
+          Contenu du dossier
           </div>
             <!-- <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
@@ -107,8 +107,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
             </div> -->
-            <div class="modal-body pdf-body">
-              <iframe src="uploads/locker-content.png" style="width:100%; height: 100%;"></iframe>
+            <div class="modal-body pdf-body text-center">
+              <img src="images/dossier_locker_ordi.png" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
 
   <!-- Modal decrypt -->
   <div class="modal fade bd-example-modal-lg" id="decrypt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content modal-content-dark" style="height: 100%;">
         <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>
@@ -146,7 +146,7 @@
 
   <!-- Modal invitation -->
   <div class="modal fade bd-example-modal-lg" id="invitation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document" style="height: 90%;">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content modal-content-dark" style="height: 100%;">
         <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">PDF 1 !</h5>

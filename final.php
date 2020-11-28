@@ -64,7 +64,7 @@
       </div>
       <div class="modal-body">
       	<div class="modal-body auth text-center">
-      		<div class="text-center">🎬 Timecode</div>
+      		<div class="text-center">🎬 Timecode - 1:21</div>
 
       	</div>
         <form action="login.php" method="post">

@@ -18,13 +18,33 @@
 
 <body>
 
- 
+<!-- Modal maps -->
+<div class="modal fade bd-example-modal-lg" id="maps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-header modal-content-dark">
+        <h5 class="modal-title" id="exampleModalLabel">Félicitations !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-content modal-content-dark">
+      <div class="modal-body text-center" style="max-width: 100%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1606577154990!6m8!1m7!1sy2v5fHkLI_LVsjJq4dTcxA!2m2!1d43.3442865222153!2d5.442309086505996!3f15.05581607726944!4f8.788031934514805!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer" style="text-align: left !important;">
+        <div style="text-align: left !important;">Coucou</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 	<div class="fullHeight text-center page">
 		<img class="fullHeight" src="images/ordi-final2.png" usemap="#map1606435175118">
     
     <map id="map1606435175118" name="map1606435175118">
-      <area shape="rect" coords="334,285,634,375" title="" alt="" href="button" target="_self">
+      <area shape="rect" coords="334,285,634,375" title="maps" alt="" href="#scrapModal" target="_self"data-toggle="modal" data-target="#maps">
     </map>
 			
 	</div>

@@ -96,7 +96,10 @@
         <div class="modal-body auth">
           <form method="post">
             <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Ce document est protégé par un mot de passe</label>
+              <label class="col-form-label">Contenu non protégé : "trouver_la_bonne_voiture.png"</label>
+              <img src="images/voitures.png" style="max-width: 100%;"  alt="" usemap="#map1606155675407">
+
+              <label for="recipient-name" class="col-form-label">Le reste des données est protégé par un mot de passe</label>
               <input type="text" inputmode="numeric" class="form-control" id="recipient-name" name="codeSD" aria-invalid="false" autocomplete="off" placeholder="" maxlength="12" required>
             </div>
             <div class="modal-footer">
@@ -112,7 +115,7 @@
   <?php
   if (isset($_POST["codeSD"])) {
     $code = $_POST["codeSD"];
-    if ($code == "-007-") {
+    if ($code == "TT-378-20") {
       echo '
     <!-- Modal Video -->
     <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -123,7 +126,7 @@
           <p style="margin:10px;">
             111     …     3927     41664     525125 </p>
           <p style="margin-left:10px;">
-            Convertis en minutes, tu trouveras ce que tu cherches.
+            Complète cette suite, convertis en minutes, tu trouveras ce que tu cherches dans la vidéo.
           </p>
         </div>
       </div>

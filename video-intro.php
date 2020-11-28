@@ -19,7 +19,7 @@
 	<style type="text/css">
 		body {
 			margin: 0 auto;
-			width : 40vw
+			width : 40vw;
 		}
 		p {
 			width: 560px;
