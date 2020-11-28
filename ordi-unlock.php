@@ -162,7 +162,6 @@
   </div>
 
 <!-- Modal neurchi -->
-<!-- Modal photos -->
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="neurchi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
     <div class="modal-content modal-content-dark" style="height: 100%;">
@@ -187,10 +186,10 @@
 </div>
 
 
-<!-- Modal passeport -->
+<!-- Modal echo -->
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="echo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
-    <div class="modal-content modal-content-dark" style="height: 100%;">
+  <div class="modal-dialog modal-lg" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: auto;">
       <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -198,7 +197,7 @@
         </button>
       </div> -->
       <div class="modal-body text-center" style="height: 97%;">
-          <img src="uploads/bbb.gif" style="background-image: 'uploads/bbb.gif'; height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
+          <img src="uploads/bbb.gif" style="background-image: 'uploads/bbb.gif'; width: 100%; height:50%"  alt="" usemap="#map1606155675407">
 
           <map id="map1606155675407" name="map1606155675407">
             <area shape="rect" coords="320,141,637,456" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
