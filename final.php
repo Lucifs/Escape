@@ -17,7 +17,8 @@
 </head>
 
 <body>
-
+<!-- audio qui se lance au début -->
+<audio id="audio_control" controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px; display:none;"><source id="audio" src="uploads/audio2.mp3" type="audio/mp3"></audio>
 <!-- Modal welcome -->
 <div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="welcome" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -113,9 +114,13 @@
 <script type="text/javascript">
 	$(document).ready(function(e) {
     	$('img[usemap]').rwdImageMaps();
-    	new ClipboardJS('.btn');
-	});
-
+      new ClipboardJS('.btn');
+  });
+</script>
+<script type="text/javascript">
+$(document).mouseover(()=>{
+$('#audio_control')[0].play();
+});
 </script>
 <?php 
 if (!isset($_GET["hidemessage"])) {
