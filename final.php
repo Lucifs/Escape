@@ -101,7 +101,7 @@
 		<img class="fullHeight" src="images/final.jpg" usemap="#map1606084233395">
 
 		<map id="map1606084233395" name="map1606084233395">
-			<area shape="rect" coords="977,728,1134,811" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#main">
+			<area id="stop" shape="rect" coords="977,728,1134,811" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#main">
 		</map>
 			
 	</div>
@@ -118,9 +118,13 @@
   });
 </script>
 <script type="text/javascript">
+  
 $(document).mouseover(()=>{
-$('#audio_control')[0].play();
+    $('#audio_control')[0].play();
 });
+document.getElementById('stop').onclick = function(){
+    $('#audio_control')[0].pause();
+}
 </script>
 <?php 
 if (!isset($_GET["hidemessage"])) {

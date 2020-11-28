@@ -282,6 +282,25 @@
   </div>
   </div>
 
+
+
+<!-- Modal petitcentralien -->
+<div class="modal fade bd-example-modal-lg" data-animate-in='animate__zoomInUp' data-animate-out='animate__flipOutY' id="petitcentralien" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: auto; height: 90%;">
+    <div class="modal-content modal-content-dark" style="height: 100%;">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Calendar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body text-center" style="height: 97%;">
+          <img src="images/petit_centralien.jpeg" style="height:100%; max-width: 100%;"  alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Modal locker C -->
   <div class="modal fade" id="locker3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -320,13 +339,14 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
           <audio id="audio_control" controls="true" style="outline: none; height:45px; width: 100%; margin-top:5px; display:none;"><source id="audio" src="uploads/audio.mp3" type="audio/mp3"></audio>
-          <img src="images/lockerC.png" alt="" style=" margin-top: -50px; width: 100%;" usemap="#personnalmap">
+          <img src="images/lockerC.png" alt="" style="width: 100%;" usemap="#personnalmap">
 
           <map id="personnalmap" name="personnalmap">
             <area shape="poly" coords="157,695,412,572,446,662,225,850" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
             <area shape="poly" coords="406,1011,553,895,568,998,549,948" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
             <area shape="poly" coords="255,910,358,1032,319,1053" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#listesansrep" data-dismiss="modal">
             <area shape="poly" coords="727,593,956,556,970,604,1019,599,1075,944,792,989" title="files" alt="" href="uploads/sample_file.pdf" download="IMPORTANTTRESIMPORTANT.pdf">
+            <area shape="poly" coords="1073,902,1336,571,1564,576,1408,1017" title="" alt="" href="#scrapModal" target="_self" data-toggle="modal" data-target="#petitcentralien" data-dismiss="modal">
           </map>
         </div>
       </div>
@@ -495,6 +515,7 @@ var time = parseInt(getCookie("time"),10); // renvoie le temps de base (dans la 
 var deltaT = Date.now() - time; // renvoie le temps écoulé en ms
 if (stop == "true"){
   $("#b30").hide();
+  document.getElementById('numero').disabled = true;
   setTimeout(() => {  $('#b30').show() },5 * 60 * 1000 - deltaT); // milisecondes
 }
 

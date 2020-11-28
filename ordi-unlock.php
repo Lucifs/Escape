@@ -172,14 +172,7 @@
         </button>
       </div> -->
       <div class="modal-body text-center" style="height: 97%;">
-        <!-- <a href="#scrapModal" target="_self"data-toggle="modal" data-target="#post-it" data-dismiss="modal"> -->
-          <img src="images/neurchi.jpeg" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
-
-          <map id="map1606155675407" name="map1606155675407">
-            <area shape="rect" coords="320,141,637,456" title="" alt="" data-dismiss="modal" href="#scrapModal" target="_self" data-toggle="modal" data-target="#post-it">
-          </map>
-        <!-- </a> -->
-
+          <img src="images/neurchi.jpeg" style="height:100%; max-width: 100%;"  alt="">
       </div>
     </div>
   </div>

@@ -29,10 +29,31 @@
       </div>
     <div class="modal-content modal-content-dark">
       <div class="modal-body text-center" style="max-width: 100%;">
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1606577154990!6m8!1m7!1sy2v5fHkLI_LVsjJq4dTcxA!2m2!1d43.3442865222153!2d5.442309086505996!3f15.05581607726944!4f8.788031934514805!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      	<div>Agents de la divison 013, vous êtes venu à bout de cette organisation criminelle.</div>
+      	<div> Envoie sur discord le mot suivant : "
+      		<script type="text/javascript">
+				var ladate = new Date();
+				var h=ladate.getHours();
+				if ((h>=13)&&(h<16)) {
+					document.write('Quinte');
+				}
+				else {
+					if ((h>=16)&&(h<18)) {
+					document.write('Flush');
+					}
+					else {
+						document.write('Dame');
+					}
+				}
+			</script>
+			" et ta mission sera achevée.</div>
+		<div>
+			Prochaine mission ce soir à 20h.
+		</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1606577154990!6m8!1m7!1sy2v5fHkLI_LVsjJq4dTcxA!2m2!1d43.3442865222153!2d5.442309086505996!3f15.05581607726944!4f8.788031934514805!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0; margin-top: 30px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-      <div class="modal-footer" style="text-align: left !important;">
-        <div style="text-align: left !important;">Coucou</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
