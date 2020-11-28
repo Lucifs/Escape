@@ -54,7 +54,7 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email
         if ($mdp == "1906"){
             $host = $_SERVER['HTTP_HOST'];
             $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-            $extra = 'final2.php';
+            $extra = 'debut.php';
             header("Location: http://$host$uri/$extra");
             exit();
         }else{
@@ -87,12 +87,12 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email
                 exit();
         }
     }
-    if ($url == "final2.php"){
+    if ($url == "debut.php"){
         if ($email == "mads.mikkelsen" AND $mdp == "vesper"){
                 echo "Bonne combinaison.";
                 $host = $_SERVER['HTTP_HOST'];
                 $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-                $extra = 'final3.php';
+                $extra = 'voiture.php';
                 header("Location: http://$host$uri/$extra");
                 exit();
         }else{

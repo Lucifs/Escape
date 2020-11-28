@@ -42,7 +42,7 @@
 
           ?>
           <form action="login.php" method="post" autocomplete="off">
-            <input type="hidden" name="URL" value="final2.php" readonly />
+            <input type="hidden" name="URL" value="debut.php" readonly />
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Identifiant</label>
               <input type="text" class="form-control" name="email" value="" placeholder="prenom.nom" required /> <!-- le nom c'est email vu que j'ai la flemme -->
