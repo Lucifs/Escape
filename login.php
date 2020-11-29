@@ -61,7 +61,7 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email
             echo "Mauvais mot de passe";
             $host = $_SERVER['HTTP_HOST'];
             $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
-            header("Location: http://$host$uri/$url");
+            header("Location: http://$host$uri/$url?hidemessage");
             exit();
         }
     }
@@ -83,7 +83,7 @@ if(isset($_POST["URL"]) AND isset($_POST["MotDePasse"]) AND !isset($_POST["email
                 $host = $_SERVER['HTTP_HOST'];
                 $uri = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
                 $extra = '?error';
-                header("Location: http://$host$uri/$URL$extra");
+                header("Location: http://$host$uri/$url$extra");
                 exit();
         }
     }

@@ -122,7 +122,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content modal-content-dark">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/JCSbJ4VCud0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin:10px;"></iframe>
-          <h5 style="margin:10px;">Desciption :</h5>
+          <h5 style="margin:10px;">Description :</h5>
           <p style="margin:10px;">
             111     …     3927     41664     525125 </p>
           <p style="margin-left:10px;">
