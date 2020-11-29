@@ -118,8 +118,7 @@
   });
 </script>
 <script type="text/javascript">
-  
-$(document).mouseover(()=>{
+$(document).one("mouseover click",()=>{
     $('#audio_control')[0].play();
 });
 document.getElementById('stop').onclick = function(){
