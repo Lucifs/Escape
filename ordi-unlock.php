@@ -106,7 +106,7 @@
             </button>
             </div> -->
             <div class="modal-body pdf-body text-center">
-              <img src="images/dossier_locker_ordi.png" style="height:100%; max-width: 100%;"  alt="" usemap="#map1606155675407">
+              <img src="images/dossier_locker_ordi.png" style="max-width: 100%;"  alt="" usemap="#map1606155675407">
             </div>
           </div>
         </div>
