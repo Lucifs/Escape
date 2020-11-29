@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-
   <!-- Modal exit -->
   <div class="modal fade" id="exit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -47,7 +45,7 @@
             <div class="form-group">
               <label for="recipient-name" class="col-form-label">Nom de l'organisation :</label>
               <input type="hidden" name="URL" value="ordi-unlock.php" readonly />
-              <input type="text" class="form-control" id="recipient-name" name="MotDePasse" aria-invalid="false" autocomplete="off" placeholder="" maxlength="10" required>
+              <input type="text" class="form-control" id="recipient-name" name="MotDePasse" aria-invalid="false" autocomplete="off" placeholder="" maxlength="20" required>
             </div>
             <div class="modal-footer">
               <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Access</button> -->
