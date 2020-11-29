@@ -83,8 +83,8 @@
 </div>
 
 <!-- Modal SD -->
-  <div class="modal fade" id="sd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade bd-example-modal-lg" id="sd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content modal-content-dark">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Carte SD</h5>
