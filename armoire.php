@@ -455,7 +455,7 @@ if (!isset($_GET["hidemessage"])) {
 	</script>";
 }
 ?>
-
+ 
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 27 , 2020 <?php if (isset($_GET["countdown"])) {echo ($_GET["countdown"]);}?>").getTime();
@@ -489,11 +489,22 @@ var x = setInterval(function() {
 
 <script type="text/javascript">
 
-$("#b30").click(()=>{
-  $("#b30").hide();
-  document.cookie = "stop=true; max-age=300"; // secondes à modifier aussi car sinon au bout de 10s on relance et on a rien
-  document.cookie = "time="+Date.now().toString()+";max-age=300";
-});
+var non_Valide = <?php 
+  if (isset($_POST["numero"])){
+    $numero = $_POST["numero"]; 
+    echo json_encode($numero != 2);
+  }
+  else{
+    echo json_encode(false);
+  }
+  ?>;
+if (non_Valide){
+  if (getCookie("stop") == ""){
+    //$("#b30").hide();
+    document.cookie = "stop=true; max-age=300"; // secondes à modifier aussi car sinon au bout de 10s on relance et on a rien
+    document.cookie = "time="+Date.now().toString()+";max-age=300";
+  }
+}
 
 function getCookie(cname) {
   var name = cname + "=";
@@ -520,7 +531,7 @@ if (stop == "true"){
 }
 
 
-if(time != NaN){
+if(!isNaN(time)){
   $("#temps_attente").html("Il reste " + (Math.round(300 - deltaT/1000)).toString()+"s à attendre");
 }
 
