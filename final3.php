@@ -53,6 +53,10 @@
         <iframe src="https://www.google.com/maps/embed?pb=!4v1606577154990!6m8!1m7!1sy2v5fHkLI_LVsjJq4dTcxA!2m2!1d43.3442865222153!2d5.442309086505996!3f15.05581607726944!4f8.788031934514805!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0; margin-top: 30px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="modal-footer">
+		
+		  <p style="background-color:red">Un grand remerciement aux développeurs :<b> Glenn Louedec</b> et <b>Arthur Louradou</b> </p>
+		  <p style="background-color:red">On remercie aussi les graphistes : <b>Agathe Rabachou</b> et <b>Grégoire Dusseux</b> </p>
+		  <p style="background-color:red">Et aussi ceux qui ont organisé toute l'histoire : <b>Agathe</b> et <b>Grégoire</b> </p>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
