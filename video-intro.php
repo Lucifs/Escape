@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	// header("Location : https://youtube.com/") //Lien vers la video !
+	// header('Location : https://youtube.com/') //Lien vers la video !
 ?>
 <html>
 <head>
@@ -19,29 +19,38 @@
 	<style type="text/css">
 		body {
 			margin: 0 auto;
-			width : 40vw;
+			max-width: 100%;
+			text-align: center;
 		}
-		p {
-			width: 560px;
+		body div {
+			margin : 0 auto;
+			width: 40vw;
 		}
+		/*@media (max-width: 500px) {
+			body div {
+				margin: 0 0;
+				width: 100%;
+			}
+		}*/
 	</style>
 </head>
 
 <body>
 	<h1 style="text-align: center;"> Bienvenue ! </h1>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/HPnNemL2apI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-	<p>
+	<div>
+		<p>
 		Vous entrez à présent tous les quatre dans le bureau de l'agent Bruant, choisissez votre rôle au sein de l'équipe et soyez efficaces, M compte sur vous.
-	</p>
-	<p>Choisissez votre rôle en concertation avec les membres de l'équipe</p>
-	<p>ATTENTION : un lien par joueur et un seul.</p>
-	<ul>
-		<li><a href="ordi-centrale.php">Expert informatique</a></li>
-		<li><a href="liege.php">Analyste</a></li>
-		<li><a href="armoire.php">Agent de terrain</a></li>
-		<li><a href="lockscreen.php">Enquêteur</a></li>
-	</ul>
-
+		</p>
+		<p>Choisissez votre rôle en concertation avec les membres de l'équipe</p>
+		<p>ATTENTION : un lien par joueur et un seul.</p>
+		<ul>
+			<li><a href="ordi-centrale.php">Expert informatique</a></li>
+			<li><a href="liege.php">Analyste</a></li>
+			<li><a href="armoire.php">Agent de terrain</a></li>
+			<li><a href="lockscreen.php">Enquêteur</a></li>
+		</ul>
+	</div>
 
 
 
