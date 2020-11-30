@@ -30,7 +30,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Ce message t'est addressé car tu en as fini avec l'ordinateur de Julie. Tu te retrouves donc dans cette ultime salle.
+        Ce message t'est adressé car tu en as fini avec l'ordinateur de Julie. Tu te retrouves donc dans cette ultime salle.
       </div>
       <div class="modal-body">
             <p class="card-title">Envoie ce lien à tes collègues pour qu'ils te rejoignent :</p>
